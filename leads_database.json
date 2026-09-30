@@ -1,105 +1,53 @@
 {
   "leads": [
     {
-      "business": "Equinox Pastries and Pops",
-      "owner": "Rachel",
-      "email": "equinoxpastriesandpops@gmail.com",
-      "niche": "Artisan Pastry & Cake Pops (Grand Rapids, MI)",
-      "pain_point": "seasonal pastry drops and pop flavors need clean visual cards so busy locals don't miss limited weekend pre-order windows.",
-      "service_key": "canva_posts",
+      "business": "Bake Me Happy",
+      "owner": "Letha",
+      "email": "bakemehappygf@gmail.com",
+      "niche": "Artisan Bakery (Columbus, OH)",
+      "pain_point": "seasonal pastry drops and weekend specials tend to get buried in long captions without bold visual announcement cards.",
+      "service_key": "social_creatives",
       "status": "pending"
     },
     {
-      "business": "Boutique Elise",
-      "owner": "Renee",
-      "email": "shopboutiqueelise@gmail.com",
-      "niche": "Independent Fashion Boutique (Columbus, OH)",
-      "pain_point": "new weekly clothing arrivals and weekend discount announcements get lost in standard photo grids without clear graphic flyer cards.",
-      "service_key": "canva_posts",
-      "status": "pending"
-    },
-    {
-      "business": "Celestino Coffee",
-      "owner": "Gio",
-      "email": "celestinocoffeellc@gmail.com",
-      "niche": "Specialty Craft Coffee (Columbus, OH)",
-      "pain_point": "customers at your counter currently have to ask for drink specials instead of scanning a quick, beautiful mobile menu on their phones.",
+      "business": "The Broken Mug",
+      "owner": "Mandy",
+      "email": "brokenmug2017@gmail.com",
+      "niche": "Specialty Coffee Shop (Columbus, OH)",
+      "pain_point": "customers waiting at your counter currently don't have an instant mobile QR menu to scan on their phones during peak rush hours.",
       "service_key": "qr_digital_menu",
       "status": "pending"
     },
     {
-      "business": "Fillings & Emulsions",
-      "owner": "Adalberto",
-      "email": "chefadalberto@gmail.com",
-      "niche": "Pastry & Dessert Studio (Salt Lake City, UT)",
-      "pain_point": "prospective catering and corporate dessert clients don't have a single clean mobile showcase page to see custom packages and tasting availability.",
+      "business": "Edgewood Bakery",
+      "owner": "Rita",
+      "email": "edgewoodbakerygr@gmail.com",
+      "niche": "Neighborhood Bakery (Grand Rapids, MI)",
+      "pain_point": "weekly custom order cut-off dates are easy for locals to scroll past when browsing your cake photos on a mobile screen.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Conservation Coffee",
+      "owner": "Jesse",
+      "email": "k3quarter@gmail.com",
+      "niche": "Sustainable Coffee Roaster (Columbus, OH)",
+      "pain_point": "there is currently no fast, 1-page mobile showcase highlighting your fresh roast subscriptions and wholesale inquiry options in one place.",
       "service_key": "mobile_landing_page",
       "status": "pending"
     },
     {
-      "business": "SLC Underground Sweets",
-      "owner": "Gina",
-      "email": "slc.underground.sweets@gmail.com",
-      "niche": "Small Batch Custom Bakery (Salt Lake City, UT)",
-      "pain_point": "important weekly order cut-off dates get buried in the photo captions, making it easy for customers to miss ordering deadlines.",
-      "service_key": "canva_posts",
-      "status": "pending"
-    },
-    {
-      "business": "Bat City Bakes",
-      "owner": "Ashleigh",
-      "email": "batcitybakes@gmail.com",
-      "niche": "Home Bakery (Austin, TX)",
-      "pain_point": "darker cookies blend into tabletop backgrounds in mobile photos, so hungry locals scroll past without seeing your custom slots are open.",
-      "service_key": "canva_posts",
-      "status": "pending"
-    },
-    {
-      "business": "Little One Cookies",
-      "owner": "Malena",
-      "email": "littleonecookies@gmail.com",
-      "niche": "Custom Bakery (Texas)",
-      "pain_point": "important cut-off dates for custom party orders often get lost down in the captions, so parents miss when to book in advance.",
-      "service_key": "canva_posts",
-      "status": "pending"
-    },
-    {
-      "business": "Music Lesson Cafe",
-      "owner": "Kristi",
-      "email": "krististice.music@gmail.com",
-      "niche": "Community Cafe & Music (Denver, CO)",
-      "pain_point": "customers at the cafe currently have to wait for physical menus, and your event flyers use smaller text that mobile users easily miss.",
-      "service_key": "qr_digital_menu",
-      "status": "pending"
-    },
-    {
-      "business": "Cakes Couture",
-      "owner": "Rhonda",
-      "email": "1cakescouture@gmail.com",
-      "niche": "Wedding Cake Studio (Texas)",
-      "pain_point": "there is no fast 1-page mobile layout for prospective brides to view your 2026 wedding availability dates, pricing tiers, and client reviews in one place.",
-      "service_key": "mobile_landing_page",
-      "status": "pending"
-    },
-    {
-      "business": "27th Street Florist",
-      "owner": "Cheryl",
-      "email": "27thst.florist@gmail.com",
-      "niche": "Boutique Florist (Vernon, BC)",
-      "pain_point": "your weekly limited bouquet specials look quite similar to everyday catalog posts, so customers might not realize when an arrangement is only available for a few days.",
-      "service_key": "canva_posts",
+      "business": "Budda's Hawaiian Bakery",
+      "owner": "Budda",
+      "email": "buddasbakery@gmail.com",
+      "niche": "Hawaiian Pastry & Grill (Salt Lake City, UT)",
+      "pain_point": "daily fresh malasada drops and lunch specials would grab more local attention with dedicated, high-contrast visual story cards.",
+      "service_key": "social_creatives",
       "status": "pending"
     }
   ],
   "stats": {
-    "total_researched": 10,
-    "qualified": 10,
-    "tier_2_focus": [
-      "Grand Rapids, MI",
-      "Columbus, OH",
-      "Salt Lake City, UT",
-      "Charlotte, NC",
-      "Manchester & Leeds, UK"
-    ]
+    "tier_2_active_batch": 5,
+    "last_updated": "2026-09-30"
   }
 }
