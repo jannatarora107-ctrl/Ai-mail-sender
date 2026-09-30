@@ -1,0 +1,72 @@
+{
+  "leads": [
+    {
+      "business": "Bat City Bakes",
+      "owner": "Ashleigh",
+      "email": "batcitybakes@gmail.com",
+      "niche": "Home Bakery (Austin)",
+      "pain_point": "darker cookies blend into tabletop backgrounds in mobile photos, so hungry locals scroll past without seeing your custom slots are open.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
+      "business": "Little One Cookies",
+      "owner": "Malena",
+      "email": "littleonecookies@gmail.com",
+      "niche": "Custom Bakery (Texas)",
+      "pain_point": "important cut-off dates for custom party orders often get lost down in the captions, so parents miss when to book in advance.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
+      "business": "Music Lesson Cafe",
+      "owner": "Kristi",
+      "email": "krististice.music@gmail.com",
+      "niche": "Community Cafe & Music (Denver)",
+      "pain_point": "customers at the cafe currently have to wait for physical menus, and your event flyers use smaller text that mobile users easily miss.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Cakes Couture",
+      "owner": "Rhonda",
+      "email": "1cakescouture@gmail.com",
+      "niche": "Wedding Cake Studio",
+      "pain_point": "there is no fast 1-page mobile layout for prospective brides to view your 2026 wedding availability dates, pricing tiers, and client reviews in one place.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "27th Street Florist",
+      "owner": "Cheryl",
+      "email": "27thst.florist@gmail.com",
+      "niche": "Boutique Florist",
+      "pain_point": "your weekly limited bouquet specials look quite similar to everyday catalog posts, so customers might not realize when an arrangement is only available for a few days.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
+      "business": "Online Fitness Club",
+      "owner": "Narendra",
+      "email": "nandusharma392@gmail.com",
+      "niche": "Live Yoga & Fitness Coaching",
+      "pain_point": "prospective clients currently don't have a single clean mobile page to see your live class schedules, pricing packages, and direct WhatsApp enrollment button.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Sample Coffee House",
+      "owner": "David",
+      "email": "info@samplecoffee.com",
+      "niche": "Coffee Shop",
+      "pain_point": "no digital menu available",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    }
+  ],
+  "stats": {
+    "total_researched": 7,
+    "qualified": 6,
+    "sent": 0
+  }
+}
