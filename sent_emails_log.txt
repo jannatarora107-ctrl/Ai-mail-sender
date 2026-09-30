@@ -1,0 +1,10 @@
+[2026-09-30 14:23:46] SENT -> equinoxpastriesandpops@gmail.com (Equinox Pastries and Pops) | Service: canva_posts | Price: $5 - $10
+[2026-09-30 14:26:13] SENT -> shopboutiqueelise@gmail.com (Boutique Elise) | Service: canva_posts | Price: $5 - $10
+[2026-09-30 14:29:03] SENT -> celestinocoffeellc@gmail.com (Celestino Coffee) | Service: qr_digital_menu | Price: $15 - $20
+[2026-09-30 14:31:40] SENT -> chefadalberto@gmail.com (Fillings & Emulsions) | Service: mobile_landing_page | Price: $25 - $35
+[2026-09-30 14:34:35] SENT -> slc.underground.sweets@gmail.com (SLC Underground Sweets) | Service: canva_posts | Price: $5 - $10
+[2026-09-30 14:37:36] SENT -> batcitybakes@gmail.com (Bat City Bakes) | Service: canva_posts | Price: $5 - $10
+[2026-09-30 14:39:09] SENT -> littleonecookies@gmail.com (Little One Cookies) | Service: canva_posts | Price: $5 - $10
+[2026-09-30 14:41:14] SENT -> krististice.music@gmail.com (Music Lesson Cafe) | Service: qr_digital_menu | Price: $15 - $20
+[2026-09-30 14:43:23] SENT -> 1cakescouture@gmail.com (Cakes Couture) | Service: mobile_landing_page | Price: $25 - $35
+[2026-09-30 14:45:57] SENT -> 27thst.florist@gmail.com (27th Street Florist) | Service: canva_posts | Price: $5 - $10
