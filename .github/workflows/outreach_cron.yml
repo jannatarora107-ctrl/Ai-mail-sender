@@ -1,14 +1,18 @@
-name: 24-7 Autonomous Outreach Scheduler
+name: 5-Hour Daily Autonomous Outreach Engine
 
 on:
   schedule:
-    # 14:00 UTC = 7:30 PM IST = 9:00 AM Central Time (Monday to Friday)
-    - cron: '0 14 * * 1-5'
+    # 11:00 UTC = 4:30 PM IST:
+    # 4:30 PM - 6:30 PM IST: Phase 1 (2 hr Lead Research)
+    # 6:30 PM - 7:30 PM IST: Phase 2 (1 hr Cooldown)
+    # 7:30 PM - 9:30 PM IST: Phase 3 (2 hr Dispatch during 9am-11am US opening hours)
+    - cron: '0 11 * * 1-5'
   workflow_dispatch: # Allows manual 1-click execution anytime from GitHub website
 
 jobs:
-  run-outreach:
+  run-autonomous-pipeline:
     runs-on: ubuntu-latest
+    timeout-minutes: 360 # 6 hours max allowance
     permissions:
       contents: write # Allows committing updated database and logs back to repo
 
@@ -25,16 +29,17 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Execute Daily Outreach Pipeline
+      - name: Execute 5-Hour Autonomous Outreach Pipeline
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
-          python daily_pipeline.py --send
+          python autonomous_5hr_pipeline.py
 
       - name: Commit and Push Updated Leads Database & Logs
+        if: always() # Ensures logs and database are committed even if interrupted
         run: |
           git config --global user.name "Outreach Bot"
           git config --global user.email "bot@yasharora.com"
           git add leads_database.json sent_emails_log.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Logged outreach dispatch [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: 5-Hour Cycle Complete [skip ci]" && git push)
