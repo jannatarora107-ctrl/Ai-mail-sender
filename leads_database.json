@@ -1,10 +1,55 @@
 {
   "leads": [
     {
+      "business": "Equinox Pastries and Pops",
+      "owner": "Rachel",
+      "email": "equinoxpastriesandpops@gmail.com",
+      "niche": "Artisan Pastry & Cake Pops (Grand Rapids, MI)",
+      "pain_point": "seasonal pastry drops and pop flavors need clean visual cards so busy locals don't miss limited weekend pre-order windows.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
+      "business": "Boutique Elise",
+      "owner": "Renee",
+      "email": "shopboutiqueelise@gmail.com",
+      "niche": "Independent Fashion Boutique (Columbus, OH)",
+      "pain_point": "new weekly clothing arrivals and weekend discount announcements get lost in standard photo grids without clear graphic flyer cards.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
+      "business": "Celestino Coffee",
+      "owner": "Gio",
+      "email": "celestinocoffeellc@gmail.com",
+      "niche": "Specialty Craft Coffee (Columbus, OH)",
+      "pain_point": "customers at your counter currently have to ask for drink specials instead of scanning a quick, beautiful mobile menu on their phones.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Fillings & Emulsions",
+      "owner": "Adalberto",
+      "email": "chefadalberto@gmail.com",
+      "niche": "Pastry & Dessert Studio (Salt Lake City, UT)",
+      "pain_point": "prospective catering and corporate dessert clients don't have a single clean mobile showcase page to see custom packages and tasting availability.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "SLC Underground Sweets",
+      "owner": "Gina",
+      "email": "slc.underground.sweets@gmail.com",
+      "niche": "Small Batch Custom Bakery (Salt Lake City, UT)",
+      "pain_point": "important weekly order cut-off dates get buried in the photo captions, making it easy for customers to miss ordering deadlines.",
+      "service_key": "canva_posts",
+      "status": "pending"
+    },
+    {
       "business": "Bat City Bakes",
       "owner": "Ashleigh",
       "email": "batcitybakes@gmail.com",
-      "niche": "Home Bakery (Austin)",
+      "niche": "Home Bakery (Austin, TX)",
       "pain_point": "darker cookies blend into tabletop backgrounds in mobile photos, so hungry locals scroll past without seeing your custom slots are open.",
       "service_key": "canva_posts",
       "status": "pending"
@@ -22,7 +67,7 @@
       "business": "Music Lesson Cafe",
       "owner": "Kristi",
       "email": "krististice.music@gmail.com",
-      "niche": "Community Cafe & Music (Denver)",
+      "niche": "Community Cafe & Music (Denver, CO)",
       "pain_point": "customers at the cafe currently have to wait for physical menus, and your event flyers use smaller text that mobile users easily miss.",
       "service_key": "qr_digital_menu",
       "status": "pending"
@@ -31,7 +76,7 @@
       "business": "Cakes Couture",
       "owner": "Rhonda",
       "email": "1cakescouture@gmail.com",
-      "niche": "Wedding Cake Studio",
+      "niche": "Wedding Cake Studio (Texas)",
       "pain_point": "there is no fast 1-page mobile layout for prospective brides to view your 2026 wedding availability dates, pricing tiers, and client reviews in one place.",
       "service_key": "mobile_landing_page",
       "status": "pending"
@@ -40,33 +85,21 @@
       "business": "27th Street Florist",
       "owner": "Cheryl",
       "email": "27thst.florist@gmail.com",
-      "niche": "Boutique Florist",
+      "niche": "Boutique Florist (Vernon, BC)",
       "pain_point": "your weekly limited bouquet specials look quite similar to everyday catalog posts, so customers might not realize when an arrangement is only available for a few days.",
       "service_key": "canva_posts",
-      "status": "pending"
-    },
-    {
-      "business": "Online Fitness Club",
-      "owner": "Narendra",
-      "email": "nandusharma392@gmail.com",
-      "niche": "Live Yoga & Fitness Coaching",
-      "pain_point": "prospective clients currently don't have a single clean mobile page to see your live class schedules, pricing packages, and direct WhatsApp enrollment button.",
-      "service_key": "mobile_landing_page",
-      "status": "pending"
-    },
-    {
-      "business": "Sample Coffee House",
-      "owner": "David",
-      "email": "info@samplecoffee.com",
-      "niche": "Coffee Shop",
-      "pain_point": "no digital menu available",
-      "service_key": "qr_digital_menu",
       "status": "pending"
     }
   ],
   "stats": {
-    "total_researched": 7,
-    "qualified": 6,
-    "sent": 0
+    "total_researched": 10,
+    "qualified": 10,
+    "tier_2_focus": [
+      "Grand Rapids, MI",
+      "Columbus, OH",
+      "Salt Lake City, UT",
+      "Charlotte, NC",
+      "Manchester & Leeds, UK"
+    ]
   }
 }
