@@ -7,8 +7,7 @@
       "niche": "Artisan Pastry & Cake Pops (Grand Rapids, MI)",
       "pain_point": "seasonal pastry drops and pop flavors need clean visual cards so busy locals don't miss limited weekend pre-order windows.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:23:46"
+      "status": "pending"
     },
     {
       "business": "Boutique Elise",
@@ -17,8 +16,7 @@
       "niche": "Independent Fashion Boutique (Columbus, OH)",
       "pain_point": "new weekly clothing arrivals and weekend discount announcements get lost in standard photo grids without clear graphic flyer cards.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:26:13"
+      "status": "pending"
     },
     {
       "business": "Celestino Coffee",
@@ -27,8 +25,7 @@
       "niche": "Specialty Craft Coffee (Columbus, OH)",
       "pain_point": "customers at your counter currently have to ask for drink specials instead of scanning a quick, beautiful mobile menu on their phones.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:29:03"
+      "status": "pending"
     },
     {
       "business": "Fillings & Emulsions",
@@ -37,8 +34,7 @@
       "niche": "Pastry & Dessert Studio (Salt Lake City, UT)",
       "pain_point": "prospective catering and corporate dessert clients don't have a single clean mobile showcase page to see custom packages and tasting availability.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:31:40"
+      "status": "pending"
     },
     {
       "business": "SLC Underground Sweets",
@@ -47,8 +43,7 @@
       "niche": "Small Batch Custom Bakery (Salt Lake City, UT)",
       "pain_point": "important weekly order cut-off dates get buried in the photo captions, making it easy for customers to miss ordering deadlines.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:34:35"
+      "status": "pending"
     },
     {
       "business": "Bat City Bakes",
@@ -57,8 +52,7 @@
       "niche": "Home Bakery (Austin, TX)",
       "pain_point": "darker cookies blend into tabletop backgrounds in mobile photos, so hungry locals scroll past without seeing your custom slots are open.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:37:36"
+      "status": "pending"
     },
     {
       "business": "Little One Cookies",
@@ -67,8 +61,7 @@
       "niche": "Custom Bakery (Texas)",
       "pain_point": "important cut-off dates for custom party orders often get lost down in the captions, so parents miss when to book in advance.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:39:09"
+      "status": "pending"
     },
     {
       "business": "Music Lesson Cafe",
@@ -77,8 +70,7 @@
       "niche": "Community Cafe & Music (Denver, CO)",
       "pain_point": "customers at the cafe currently have to wait for physical menus, and your event flyers use smaller text that mobile users easily miss.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:41:14"
+      "status": "pending"
     },
     {
       "business": "Cakes Couture",
@@ -87,8 +79,7 @@
       "niche": "Wedding Cake Studio (Texas)",
       "pain_point": "there is no fast 1-page mobile layout for prospective brides to view your 2026 wedding availability dates, pricing tiers, and client reviews in one place.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:43:23"
+      "status": "pending"
     },
     {
       "business": "27th Street Florist",
@@ -97,8 +88,7 @@
       "niche": "Boutique Florist (Vernon, BC)",
       "pain_point": "your weekly limited bouquet specials look quite similar to everyday catalog posts, so customers might not realize when an arrangement is only available for a few days.",
       "service_key": "canva_posts",
-      "status": "sent",
-      "sent_at": "2026-09-30 14:45:57"
+      "status": "pending"
     }
   ],
   "stats": {
