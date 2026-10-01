@@ -1,45 +1,42 @@
-name: 5-Hour Daily Autonomous Outreach Engine
+name: Yash Arora — Daily Autonomous Outreach
 
 on:
   schedule:
-    # 11:00 UTC = 4:30 PM IST:
-    # 4:30 PM - 6:30 PM IST: Phase 1 (2 hr Lead Research)
-    # 6:30 PM - 7:30 PM IST: Phase 2 (1 hr Cooldown)
-    # 7:30 PM - 9:30 PM IST: Phase 3 (2 hr Dispatch during 9am-11am US opening hours)
-    - cron: '0 11 * * 1-5'
-  workflow_dispatch: # Allows manual 1-click execution anytime from GitHub website
+    # 14:50 UTC = 8:20 PM IST (daily, all 7 days)
+    - cron: '50 14 * * *'
+  workflow_dispatch: # Manual 1-click run from GitHub
 
 jobs:
-  run-autonomous-pipeline:
+  outreach-cycle:
     runs-on: ubuntu-latest
-    timeout-minutes: 360 # 6 hours max allowance
+    timeout-minutes: 360  # 6-hour safety net
+
     permissions:
-      contents: write # Allows committing updated database and logs back to repo
+      contents: write  # Commit updated database & logs back to repo
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Execute 5-Hour Autonomous Outreach Pipeline
+      - name: Run Autonomous Outreach Pipeline
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        run: |
-          python autonomous_5hr_pipeline.py
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python autonomous_5hr_pipeline.py
 
-      - name: Commit and Push Updated Leads Database & Logs
-        if: always() # Ensures logs and database are committed even if interrupted
+      - name: Commit Updated Database & Logs
+        if: always()
         run: |
           git config --global user.name "Outreach Bot"
-          git config --global user.email "bot@yasharora.com"
-          git add leads_database.json sent_emails_log.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: 5-Hour Cycle Complete [skip ci]" && git push)
+          git config --global user.email "bot@yasharora.dev"
+          git add leads_database.json do_not_contact.json sent_emails_log.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: daily cycle $(date -u +%Y-%m-%d) [skip ci]" && git push)
