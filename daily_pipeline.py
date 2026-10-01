@@ -1,83 +1,82 @@
+"""
+Quick local pipeline — run on your machine for manual batch sends.
+Usage:
+  python daily_pipeline.py          # Dry run (simulation)
+  python daily_pipeline.py --send   # Live send
+"""
 import json
 import os
+import sys
 import time
 import random
 from datetime import datetime
-from lead_engine import filter_lead, send_outreach_email, SERVICES
 
-DATA_DIR = os.path.dirname(__file__)
-DB_FILE = os.path.join(DATA_DIR, "leads_database.json")
-SENT_LOG = os.path.join(DATA_DIR, "sent_emails_log.txt")
+from lead_engine import (
+    load_leads, save_leads, load_blocklist,
+    validate_lead, craft_cold_email, send_email,
+    SERVICES, MAX_SENDS_PER_DAY, DELAY_BETWEEN_MIN, DELAY_BETWEEN_MAX
+)
 
-# DAILY SAFETY LIMIT (To protect your personal Gmail from getting banned/spam flagged)
-# Researches up to 100 leads, sends max 15-25 emails/day safely.
-MAX_DAILY_SENDS = 15
-MIN_DELAY_SECONDS = 90
-MAX_DELAY_SECONDS = 180
-
-def load_database():
-    if os.path.exists(DB_FILE):
-        with open(DB_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"leads": [], "stats": {"total_researched": 0, "qualified": 0, "sent": 0}}
-
-def save_database(data):
-    with open(DB_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-def run_daily_pipeline(live=False):
-    db = load_database()
+def run_pipeline(live=False):
+    db = load_leads()
     leads = db.get("leads", [])
-    
-    print("=" * 65)
-    print("DAILY AUTONOMOUS OUTREACH PIPELINE — YASH ARORA")
-    print(f"Mode: {'LIVE SENDING' if live else 'SIMULATION / DRY RUN'}")
-    print(f"Total Leads in Pipeline: {len(leads)}")
-    print("=" * 65)
-    
-    sent_count = 0
-    
-    for i, lead in enumerate(leads):
-        if sent_count >= MAX_DAILY_SENDS:
-            print(f"\n[LIMIT REACHED] Daily safety limit of {MAX_DAILY_SENDS} emails reached to protect Gmail health.")
+    blocklist = load_blocklist()
+
+    print("=" * 60)
+    print("  YASH ARORA — LOCAL OUTREACH PIPELINE")
+    print(f"  Mode: {'LIVE SENDING' if live else 'DRY RUN (simulation)'}")
+    print(f"  Leads in database: {len(leads)}")
+    print(f"  Daily cap: {MAX_SENDS_PER_DAY}")
+    print("=" * 60)
+
+    sent = 0
+    for lead in leads:
+        if sent >= MAX_SENDS_PER_DAY:
+            print(f"\n[CAP] {MAX_SENDS_PER_DAY} emails reached — stopping.")
             break
-            
-        if lead.get("status") == "sent":
+
+        if lead.get("status") in ("sent", "followed_up_1", "followed_up_2", "completed", "blocked", "skipped"):
             continue
-            
-        valid, reason = filter_lead(lead)
+
+        valid, reason = validate_lead(lead, blocklist)
         if not valid:
-            print(f"[SKIPPED] {lead.get('business', 'Unknown')}: {reason}")
+            print(f"[SKIP] {lead.get('business', '?')}: {reason}")
             lead["status"] = "skipped"
             lead["skip_reason"] = reason
             continue
-            
-        print(f"\n[{sent_count + 1}/{MAX_DAILY_SENDS}] Qualifying: {lead['business']} ({lead['owner']})")
-        print(f"  Niche: {lead['niche']} | Target Service: {SERVICES[lead['service_key']]['title']} ({SERVICES[lead['service_key']]['price']})")
-        
-        success = send_outreach_email(lead, live=live)
-        if success:
-            if live:
+
+        svc = SERVICES.get(lead.get("service_key", "social_creatives"), SERVICES["social_creatives"])
+        print(f"\n[{sent+1}/{MAX_SENDS_PER_DAY}] {lead['business']} ({lead['owner']})")
+        print(f"  Niche: {lead.get('niche', '?')} | Service: {svc['label']} ({svc['price']})")
+
+        subject, body = craft_cold_email(lead)
+        print(f"  Subject: \"{subject}\"")
+        print(f"  Words: {len(body.split())}")
+
+        if live:
+            success, msg_id = send_email(lead["email"], subject, body)
+            if success:
                 lead["status"] = "sent"
-                lead["sent_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            sent_count += 1
-            
-            # Anti-spam delay
-            delay = random.randint(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
-            print(f"  Waiting {delay}s (~{round(delay/60, 1)} min) before next email...")
-            if live:
+                lead["sent_at"] = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+                lead["message_id"] = msg_id
+                lead["subject_used"] = subject
+                sent += 1
+
+                delay = random.randint(DELAY_BETWEEN_MIN, DELAY_BETWEEN_MAX)
+                print(f"  Pacing: {delay}s")
                 time.sleep(delay)
-            else:
-                time.sleep(1)
+        else:
+            print(f"  [SIM] Would send to: {lead['email']}")
+            print(f"  ---\n{body}\n  ---")
+            sent += 1
+            time.sleep(0.5)
 
     if live:
-        save_database(db)
-        
-    print("\n" + "=" * 65)
-    print(f"PIPELINE BATCH COMPLETE: {sent_count} emails processed.")
-    print("=" * 65)
+        save_leads(db)
+
+    print(f"\n{'=' * 60}")
+    print(f"  DONE: {sent} emails {'sent' if live else 'simulated'}")
+    print(f"{'=' * 60}")
 
 if __name__ == "__main__":
-    import sys
-    is_live = "--send" in sys.argv
-    run_daily_pipeline(live=is_live)
+    run_pipeline(live="--send" in sys.argv)
