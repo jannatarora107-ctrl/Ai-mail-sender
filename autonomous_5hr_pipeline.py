@@ -1,217 +1,423 @@
+"""
+═══════════════════════════════════════════════════════════════
+  Yash Arora — 24/7 Autonomous Outreach Pipeline
+  Runs on GitHub Actions (cloud, no local machine needed)
+
+  Phase 1  →  Lead Discovery & Research    (90 min)
+  Phase 2  →  Cooldown & Quality Check     (30 min)
+  Phase 3  →  AI-Powered Email Dispatch    (120 min)
+  Phase 4  →  Follow-Up Old Leads          (30 min)
+
+  Total runtime: ~4.5 hours per cycle
+═══════════════════════════════════════════════════════════════
+"""
+
 import os
 import sys
 import time
 import random
 import json
-import smtplib
-from datetime import datetime
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+from datetime import datetime, timedelta
 
-# ==============================================================
-# 5-HOUR AUTONOMOUS OUTREACH PIPELINE (YASH ARORA)
-# Phase 1 (2 Hours): Lead Discovery & Research
-# Phase 2 (1 Hour):  Cooldown & Quality Verification
-# Phase 3 (2 Hours): Targeted Human-Paced Dispatch ($5 - $35)
-# ==============================================================
-
-SENDER_NAME = "Yash Arora"
-SENDER_EMAIL = os.environ.get("GMAIL_ADDRESS", "yasha7080@gmail.com")
-APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "dlbewygckjbbmblr")
-
-DATA_DIR = os.path.dirname(__file__)
-DB_FILE = os.path.join(DATA_DIR, "leads_database.json")
-SENT_LOG = os.path.join(DATA_DIR, "sent_emails_log.txt")
-
-SERVICES = {
-    "canva_posts": {
-        "title": "Canva Social Posts & Stories",
-        "price": "$5 - $10",
-        "description": "Clean, mobile-optimized Canva post templates to make products and weekly announcements pop.",
-        "sample_offer": "Would it be okay if I sent you a free sample post in your style?"
-    },
-    "qr_digital_menu": {
-        "title": "QR Code Digital Menu / Catalog",
-        "price": "$15 - $20",
-        "description": "Interactive mobile menu where customers scan a QR code on their phone to view prices and order via WhatsApp.",
-        "sample_offer": "Would it be okay if I put together a quick free digital demo of your menu to check out?"
-    },
-    "mobile_landing_page": {
-        "title": "1-Page Mobile Showcase Website",
-        "price": "$25 - $35",
-        "description": "Fast-loading, 1-page mobile website with your service packages, customer reviews, and direct booking buttons.",
-        "sample_offer": "Would it be okay if I shared a free mobile layout mockup designed for your business?"
-    }
-}
-
-GENERIC_PREFIXES = (
-    "info@", "support@", "contact@", "hello@", "sales@",
-    "admin@", "help@", "team@", "office@", "orders@", "booking@", "inquiries@"
+from lead_engine import (
+    load_leads, save_leads, load_blocklist, add_to_blocklist,
+    validate_lead, craft_cold_email, craft_followup,
+    send_email, search_leads_online, enrich_lead_with_ai,
+    ai_generate, SERVICES, MAX_SENDS_PER_DAY,
+    DELAY_BETWEEN_MIN, DELAY_BETWEEN_MAX
 )
 
-# TIER-2 REGIONAL HUBS (Low inbox clutter, high reply rates)
+# ─── Target Tier-2 Regional Hubs ───────────────────────────
+# Low inbox clutter, high email open rates for small shop owners
 TARGET_REGIONS = [
-    {"city": "Grand Rapids", "state": "MI", "niches": ["pastry", "bakery", "boutique", "coffee"]},
-    {"city": "Columbus", "state": "OH", "niches": ["fashion boutique", "specialty coffee", "artisan bakery"]},
-    {"city": "Salt Lake City", "state": "UT", "niches": ["custom cakes", "catering", "specialty food"]},
-    {"city": "Charlotte", "state": "NC", "niches": ["bakery", "cafe", "florist", "wellness"]},
-    {"city": "Manchester & Leeds", "state": "UK", "niches": ["independent roastery", "bakery", "sandwich shop"]}
+    {
+        "city": "Grand Rapids", "state": "MI",
+        "niches": ["bakery", "coffee shop", "boutique", "florist", "brewery taproom"]
+    },
+    {
+        "city": "Columbus", "state": "OH",
+        "niches": ["artisan bakery", "specialty coffee", "fashion boutique", "juice bar", "pizza shop"]
+    },
+    {
+        "city": "Salt Lake City", "state": "UT",
+        "niches": ["custom cakes", "catering", "specialty food", "yoga studio", "outdoor gear shop"]
+    },
+    {
+        "city": "Charlotte", "state": "NC",
+        "niches": ["bakery", "cafe", "florist", "wellness studio", "barbershop"]
+    },
+    {
+        "city": "Manchester", "state": "UK",
+        "niches": ["independent coffee roaster", "sandwich shop", "bakery", "vintage shop"]
+    },
+    {
+        "city": "Leeds", "state": "UK",
+        "niches": ["cafe", "bakery", "independent bookshop", "craft beer bar"]
+    },
+    {
+        "city": "Eindhoven", "state": "Netherlands",
+        "niches": ["cafe", "bakery", "design studio", "bike shop"]
+    },
 ]
 
-def load_database():
-    if os.path.exists(DB_FILE):
-        with open(DB_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"leads": []}
+# Best service fit for each niche type
+NICHE_SERVICE_MAP = {
+    "bakery": "social_creatives",
+    "artisan bakery": "social_creatives",
+    "custom cakes": "social_creatives",
+    "coffee shop": "qr_digital_menu",
+    "specialty coffee": "qr_digital_menu",
+    "independent coffee roaster": "qr_digital_menu",
+    "cafe": "qr_digital_menu",
+    "sandwich shop": "qr_digital_menu",
+    "pizza shop": "qr_digital_menu",
+    "juice bar": "qr_digital_menu",
+    "boutique": "social_creatives",
+    "fashion boutique": "social_creatives",
+    "vintage shop": "social_creatives",
+    "florist": "social_creatives",
+    "wellness studio": "mobile_landing_page",
+    "yoga studio": "mobile_landing_page",
+    "barbershop": "mobile_landing_page",
+    "brewery taproom": "qr_digital_menu",
+    "craft beer bar": "qr_digital_menu",
+    "catering": "mobile_landing_page",
+    "outdoor gear shop": "mobile_landing_page",
+    "design studio": "mobile_landing_page",
+    "bike shop": "mobile_landing_page",
+    "independent bookshop": "social_creatives",
+    "specialty food": "social_creatives",
+}
 
-def save_database(data):
-    with open(DB_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
 
-def filter_lead(lead, existing_emails):
-    email = lead.get("email", "").lower().strip()
-    if not email or "@" not in email:
-        return False, "Invalid email"
-    if email in existing_emails:
-        return False, "Duplicate email"
-    for prefix in GENERIC_PREFIXES:
-        if email.startswith(prefix):
-            return False, f"Generic prefix: {prefix}"
-    if not lead.get("owner"):
-        return False, "Missing owner name"
-    return True, "Valid lead"
+def log(msg):
+    print(f"[{datetime.utcnow().strftime('%H:%M:%S UTC')}] {msg}")
 
-def phase_1_research(duration_minutes=120):
-    print("=" * 65)
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] STARTING PHASE 1: LEAD RESEARCH & DISCOVERY")
-    print(f"Duration Target: {duration_minutes} minutes")
-    print("=" * 65)
-    
-    db = load_database()
+
+# ═══════════════════════════════════════════════════════════
+#  PHASE 1: LEAD DISCOVERY & RESEARCH
+# ═══════════════════════════════════════════════════════════
+
+def phase_1_discover(duration_minutes=90):
+    log("=" * 60)
+    log("PHASE 1: LEAD DISCOVERY & RESEARCH")
+    log(f"Duration: {duration_minutes} min | Targets: {len(TARGET_REGIONS)} regions")
+    log("=" * 60)
+
+    db = load_leads()
     existing_emails = set(l.get("email", "").lower() for l in db.get("leads", []))
-    
-    start_time = time.time()
-    discovered_in_session = 0
-    
-    # Research loops across target Tier-2 hubs with rotating niches
-    while (time.time() - start_time) < (duration_minutes * 60):
-        region = random.choice(TARGET_REGIONS)
-        niche = random.choice(region["niches"])
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Scanning Hub: {region['city']}, {region['state']} for niche: '{niche}'...")
-        
-        # Pacing between search iterations (sleep 3-5 mins to avoid search rate-limits)
-        time.sleep(random.randint(180, 300))
-        
-        # In a 2hr window, it periodically checks and saves new leads
-        if (time.time() - start_time) >= (duration_minutes * 60):
+    blocklist = load_blocklist()
+    new_count = 0
+    start = time.time()
+
+    # Shuffle regions for variety each run
+    regions = list(TARGET_REGIONS)
+    random.shuffle(regions)
+
+    for region in regions:
+        if (time.time() - start) >= (duration_minutes * 60):
             break
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] PHASE 1 COMPLETE. Total qualified leads in database: {len(db['leads'])}")
+        for niche in region["niches"]:
+            if (time.time() - start) >= (duration_minutes * 60):
+                break
 
-def phase_2_cooldown(duration_minutes=60):
-    print("\n" + "=" * 65)
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] STARTING PHASE 2: 1-HOUR COOLDOWN & VERIFICATION")
-    print("=" * 65)
-    print(f"System resting for {duration_minutes} minutes to clear request buffers and prep dispatch queue...")
-    
-    # 1 hour sleep (60 minutes)
+            city_label = f"{region['city']}, {region['state']}"
+            log(f"  Scanning: {niche} in {city_label}...")
+
+            # Search for business emails
+            raw_emails = search_leads_online(region["city"], niche, existing_emails)
+
+            for email in raw_emails:
+                if email in existing_emails or email in blocklist:
+                    continue
+
+                # Use AI to enrich the lead
+                enriched = enrich_lead_with_ai(email, region["city"], niche)
+                if not enriched:
+                    log(f"    Skipped {email} (AI enrichment failed)")
+                    continue
+
+                service_key = NICHE_SERVICE_MAP.get(niche, "social_creatives")
+
+                new_lead = {
+                    "business": enriched.get("business", "Unknown"),
+                    "owner": enriched.get("owner", ""),
+                    "email": email,
+                    "niche": f"{niche.title()} ({city_label})",
+                    "pain_point": enriched.get("pain_point", ""),
+                    "service_key": service_key,
+                    "status": "pending",
+                    "discovered_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+                    "source": f"web_search_{region['city'].lower().replace(' ', '_')}"
+                }
+
+                # Validate before adding
+                valid, reason = validate_lead(new_lead, blocklist)
+                if valid:
+                    db["leads"].append(new_lead)
+                    existing_emails.add(email)
+                    new_count += 1
+                    log(f"    + NEW LEAD: {new_lead['business']} ({email})")
+                else:
+                    log(f"    Skipped {email}: {reason}")
+
+            # Pace between searches (avoid rate limits)
+            wait = random.randint(45, 90)
+            log(f"  Pacing: {wait}s before next search...")
+            time.sleep(wait)
+
+    save_leads(db)
+    log(f"PHASE 1 COMPLETE: {new_count} new leads discovered")
+    log(f"Total leads in database: {len(db['leads'])}")
+    return new_count
+
+
+# ═══════════════════════════════════════════════════════════
+#  PHASE 2: COOLDOWN & QUALITY VERIFICATION
+# ═══════════════════════════════════════════════════════════
+
+def phase_2_cooldown(duration_minutes=30):
+    log("")
+    log("=" * 60)
+    log("PHASE 2: COOLDOWN & QUALITY CHECK")
+    log("=" * 60)
+
+    db = load_leads()
+    blocklist = load_blocklist()
+
+    # Remove any leads that are on the DNC list
+    cleaned = 0
+    for lead in db["leads"]:
+        email = lead.get("email", "").lower().strip()
+        if email in blocklist and lead.get("status") != "blocked":
+            lead["status"] = "blocked"
+            cleaned += 1
+            log(f"  Blocked: {email} (on do-not-contact list)")
+
+    if cleaned:
+        save_leads(db)
+        log(f"  Cleaned {cleaned} blocked leads")
+
+    # Deduplicate by email
+    seen = set()
+    unique_leads = []
+    dupes = 0
+    for lead in db["leads"]:
+        email = lead.get("email", "").lower().strip()
+        if email not in seen:
+            seen.add(email)
+            unique_leads.append(lead)
+        else:
+            dupes += 1
+    if dupes:
+        db["leads"] = unique_leads
+        save_leads(db)
+        log(f"  Removed {dupes} duplicate leads")
+
+    # Count stats
+    statuses = {}
+    for lead in db["leads"]:
+        s = lead.get("status", "unknown")
+        statuses[s] = statuses.get(s, 0) + 1
+    log(f"  Pipeline status: {json.dumps(statuses)}")
+
+    # Cooldown wait
+    log(f"  Resting for {duration_minutes} min before dispatch...")
     for minute in range(1, duration_minutes + 1):
         time.sleep(60)
-        if minute % 15 == 0:
-            print(f"  Cooldown progress: {minute}/{duration_minutes} minutes completed.")
+        if minute % 10 == 0:
+            log(f"  Cooldown: {minute}/{duration_minutes} min done")
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] PHASE 2 COOLDOWN COMPLETE.")
+    log("PHASE 2 COMPLETE")
 
-def phase_3_dispatch(max_sends=15, duration_minutes=120):
-    print("\n" + "=" * 65)
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] STARTING PHASE 3: OUTREACH DISPATCH")
-    print(f"Daily Cap: {max_sends} emails | Window: {duration_minutes} minutes")
-    print("=" * 65)
-    
-    db = load_database()
-    leads = db.get("leads", [])
-    
+
+# ═══════════════════════════════════════════════════════════
+#  PHASE 3: AI-POWERED EMAIL DISPATCH
+# ═══════════════════════════════════════════════════════════
+
+def phase_3_dispatch(duration_minutes=120):
+    log("")
+    log("=" * 60)
+    log("PHASE 3: AI-POWERED EMAIL DISPATCH")
+    log(f"Daily cap: {MAX_SENDS_PER_DAY} | Window: {duration_minutes} min")
+    log("=" * 60)
+
+    db = load_leads()
+    blocklist = load_blocklist()
     sent_count = 0
-    start_time = time.time()
-    
-    for lead in leads:
-        if sent_count >= max_sends or (time.time() - start_time) >= (duration_minutes * 60):
+    start = time.time()
+
+    for lead in db["leads"]:
+        # Check limits
+        if sent_count >= MAX_SENDS_PER_DAY:
+            log(f"Daily cap reached ({MAX_SENDS_PER_DAY})")
             break
-            
-        if lead.get("status") == "sent":
+        if (time.time() - start) >= (duration_minutes * 60):
+            log("Dispatch window expired")
+            break
+
+        # Skip already-sent, blocked, or completed leads
+        if lead.get("status") in ("sent", "followed_up_1", "followed_up_2", "completed", "blocked", "skipped"):
             continue
-            
-        recipient = lead["email"]
-        owner = lead["owner"]
-        business = lead["business"]
-        service_key = lead.get("service_key", "canva_posts")
-        service = SERVICES[service_key]
-        
-        subject = f"quick thought about {business.lower()}"
-        body = f"""Hi {owner},
 
-I was looking at your {business} page and really liked what you're doing—your work looks great.
+        # Validate
+        valid, reason = validate_lead(lead, blocklist)
+        if not valid:
+            lead["status"] = "skipped"
+            lead["skip_reason"] = reason
+            log(f"  SKIP: {lead.get('business', '?')} — {reason}")
+            continue
 
-One thing I noticed: {lead['pain_point']}
+        # Generate AI-powered email
+        log(f"  [{sent_count+1}/{MAX_SENDS_PER_DAY}] Crafting email for: {lead['business']} ({lead['owner']})")
+        subject, body = craft_cold_email(lead)
 
-I'm Yash, a freelance designer. I help local businesses with {service['description'].lower()} for just {service['price']}.
+        log(f"    Subject: \"{subject}\"")
+        log(f"    Words: {len(body.split())}")
 
-{service['sample_offer']}
+        # Send
+        success, msg_id = send_email(lead["email"], subject, body)
 
-Best,
-Yash Arora"""
+        if success:
+            lead["status"] = "sent"
+            lead["sent_at"] = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+            lead["message_id"] = msg_id
+            lead["subject_used"] = subject
+            sent_count += 1
+            save_leads(db)  # Save after each send for safety
 
-        msg = MIMEMultipart("alternative")
-        msg["From"] = f"{SENDER_NAME} <{SENDER_EMAIL}>"
-        msg["To"] = recipient
-        msg["Subject"] = subject
-        msg.attach(MIMEText(body, "plain", "utf-8"))
+            # Anti-spam pacing
+            delay = random.randint(DELAY_BETWEEN_MIN, DELAY_BETWEEN_MAX)
+            log(f"    Pacing: {delay}s (~{round(delay/60,1)} min)")
+            time.sleep(delay)
+        else:
+            lead["status"] = "failed"
+            lead["fail_reason"] = "SMTP error"
+
+    save_leads(db)
+    log(f"PHASE 3 COMPLETE: {sent_count} emails delivered")
+    return sent_count
+
+
+# ═══════════════════════════════════════════════════════════
+#  PHASE 4: FOLLOW-UP OLD LEADS
+# ═══════════════════════════════════════════════════════════
+
+def phase_4_followups(max_followups=10):
+    log("")
+    log("=" * 60)
+    log("PHASE 4: FOLLOW-UP SEQUENCE")
+    log("=" * 60)
+
+    db = load_leads()
+    blocklist = load_blocklist()
+    now = datetime.utcnow()
+    followup_count = 0
+
+    for lead in db["leads"]:
+        if followup_count >= max_followups:
+            break
+
+        email = lead.get("email", "").lower().strip()
+        if email in blocklist:
+            continue
+
+        status = lead.get("status", "")
+        sent_at_str = lead.get("sent_at", "")
+        if not sent_at_str:
+            continue
 
         try:
-            with smtplib.SMTP("smtp.gmail.com", 587) as server:
-                server.starttls()
-                server.login(SENDER_EMAIL, APP_PASSWORD)
-                server.sendmail(SENDER_EMAIL, recipient, msg.as_string())
-            
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            log_line = f"[{timestamp}] SENT -> {recipient} ({business}) | Service: {service_key} | Price: {service['price']}\n"
-            print(f"[{datetime.now().strftime('%H:%M:%S')}] DISPATCHED -> {recipient} ({business})")
-            
-            with open(SENT_LOG, "a", encoding="utf-8") as lf:
-                lf.write(log_line)
-                
-            lead["status"] = "sent"
-            lead["sent_at"] = timestamp
-            sent_count += 1
-            save_database(db)
-            
-            # Anti-spam delay: 2 to 4 minutes random gap
-            delay = random.randint(120, 240)
-            print(f"  Pacing: Waiting {delay}s (~{round(delay/60, 1)} min) before next email...")
-            time.sleep(delay)
-            
-        except Exception as e:
-            print(f"  FAILED to send to {recipient}: {e}")
+            sent_at = datetime.strptime(sent_at_str, "%Y-%m-%d %H:%M UTC")
+        except ValueError:
+            try:
+                sent_at = datetime.strptime(sent_at_str, "%Y-%m-%d %H:%M:%S")
+            except ValueError:
+                continue
 
-    print(f"\n[{datetime.now().strftime('%H:%M:%S')}] PHASE 3 COMPLETE: {sent_count} emails successfully delivered.")
+        days_since = (now - sent_at).days
+        original_msg_id = lead.get("message_id")
+        original_subject = lead.get("subject_used", f"about {lead.get('business', '')}")
+
+        # Follow-up 1: 4+ days after first email
+        if status == "sent" and days_since >= 4:
+            log(f"  Follow-up #1 for {lead['business']} ({days_since} days old)")
+            body = craft_followup(lead, 1)
+            subject = f"Re: {original_subject}"
+
+            success, msg_id = send_email(
+                lead["email"], subject, body, reply_to_id=original_msg_id
+            )
+            if success:
+                lead["status"] = "followed_up_1"
+                lead["followup_1_at"] = now.strftime("%Y-%m-%d %H:%M UTC")
+                followup_count += 1
+                time.sleep(random.randint(60, 120))
+
+        # Follow-up 2: 10+ days after first email
+        elif status == "followed_up_1" and days_since >= 10:
+            log(f"  Follow-up #2 (final) for {lead['business']} ({days_since} days old)")
+            body = craft_followup(lead, 2)
+            subject = f"Re: {original_subject}"
+
+            success, msg_id = send_email(
+                lead["email"], subject, body, reply_to_id=original_msg_id
+            )
+            if success:
+                lead["status"] = "completed"
+                lead["followup_2_at"] = now.strftime("%Y-%m-%d %H:%M UTC")
+                followup_count += 1
+                time.sleep(random.randint(60, 120))
+
+    save_leads(db)
+    log(f"PHASE 4 COMPLETE: {followup_count} follow-ups sent")
+    return followup_count
+
+
+# ═══════════════════════════════════════════════════════════
+#  MAIN EXECUTION
+# ═══════════════════════════════════════════════════════════
+
+def run_full_cycle():
+    """Complete daily outreach cycle (~4.5 hours)."""
+    log("=" * 60)
+    log("  YASH ARORA — AUTONOMOUS OUTREACH ENGINE")
+    log(f"  Started: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
+    log(f"  Daily cap: {MAX_SENDS_PER_DAY} emails")
+    log("=" * 60)
+
+    # Phase 1: Discover new leads (90 min)
+    phase_1_discover(duration_minutes=90)
+
+    # Phase 2: Cooldown + quality check (30 min)
+    phase_2_cooldown(duration_minutes=30)
+
+    # Phase 3: Send cold emails (120 min)
+    phase_3_dispatch(duration_minutes=120)
+
+    # Phase 4: Send follow-ups (up to 10)
+    phase_4_followups(max_followups=10)
+
+    log("")
+    log("=" * 60)
+    log("  DAILY CYCLE COMPLETE")
+    log(f"  Finished: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
+    log("=" * 60)
+
+
+def run_test():
+    """Quick test of all phases (2-3 minutes)."""
+    log("TEST MODE — Running mini cycle")
+    phase_1_discover(duration_minutes=1)
+    phase_2_cooldown(duration_minutes=1)
+    phase_3_dispatch(duration_minutes=2)
+    phase_4_followups(max_followups=2)
+    log("TEST COMPLETE")
+
 
 if __name__ == "__main__":
-    test_mode = "--test" in sys.argv
-    
-    if test_mode:
-        print("[TEST MODE] Running 1-minute test of all 3 phases...")
-        phase_1_research(duration_minutes=1)
-        phase_2_cooldown(duration_minutes=1)
-        phase_3_dispatch(max_sends=1, duration_minutes=2)
+    if "--test" in sys.argv:
+        run_test()
     else:
-        # Full 5-Hour Daily Autonomous Cycle
-        # Phase 1: 120 min (2 hr research)
-        # Phase 2: 60 min (1 hr cooldown)
-        # Phase 3: 120 min (2 hr dispatch)
-        phase_1_research(duration_minutes=120)
-        phase_2_cooldown(duration_minutes=60)
-        phase_3_dispatch(max_sends=15, duration_minutes=120)
-        
-    print("\n" + "=" * 65)
-    print("5-HOUR AUTONOMOUS PIPELINE CYCLE COMPLETED FOR THE DAY!")
-    print("=" * 65)
+        run_full_cycle()
