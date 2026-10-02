@@ -26,8 +26,9 @@ except ImportError:
 SENDER_NAME  = "Yash Arora"
 SENDER_EMAIL = os.environ.get("GMAIL_ADDRESS", "")
 APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
+ATRIA_API_KEY = os.environ.get("ATRIA_API_KEY", "atr_crgUcm9y8AlDpRbav_ogZGG0iMLKiIvU")
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-AI_MODEL = "google/gemini-flash-1.5"
+AI_MODEL = "nvidia/nemotron-3.5-lightning:free"
 
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_FILE  = os.path.join(DATA_DIR, "leads_database.json")
@@ -135,42 +136,105 @@ Rules:
 
 Return ONLY the text. No subject. No quotes."""
 
-# ─── OpenRouter AI ─────────────────────────────────────────
-def ai_generate(system_prompt, user_prompt, temperature=0.93):
-    """Call OpenRouter for AI-generated content. Returns None on failure."""
-    if not OPENROUTER_KEY or not http:
+# ─── Unified AI Generator (Atria -> OpenRouter -> Fallback) ──
+def _ask_atria(system_prompt, user_prompt, max_tokens=600):
+    if not ATRIA_API_KEY:
         return None
+    import ssl
+    import urllib.request
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+
+    payload = json.dumps({
+        "model": "Atria-Dawn-Preview",
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        "stream": True,
+        "max_tokens": max_tokens
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.atria-asi.ai/v1/chat/completions",
+        data=payload,
+        headers={"Authorization": f"Bearer {ATRIA_API_KEY}", "Content-Type": "application/json"}
+    )
+    content = []
     try:
-        r = http.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {OPENROUTER_KEY}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://github.com/jannatarora107-ctrl/Ai-mail-sender",
-                "X-Title": "Yash Arora Outreach"
-            },
-            json={
-                "model": AI_MODEL,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                "temperature": temperature,
-                "max_tokens": 350
-            },
-            timeout=45
-        )
-        r.raise_for_status()
-        text = r.json()["choices"][0]["message"]["content"].strip()
-        # Strip any accidental wrapping quotes
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+            for line in resp:
+                line_str = line.decode('utf-8').strip()
+                if not line_str or line_str == "data: [DONE]":
+                    continue
+                if line_str.startswith("data: "):
+                    try:
+                        chunk = json.loads(line_str[6:])
+                        choices = chunk.get("choices", [])
+                        if not choices:
+                            continue
+                        delta = choices[0].get("delta", {})
+                        if "content" in delta and delta["content"]:
+                            content.append(delta["content"])
+                    except Exception:
+                        pass
+        res = "".join(content).strip()
+        if len(res) > 20:
+            return res
+    except Exception as e:
+        print(f"  [Atria engine notice: {e}]")
+    return None
+
+
+def ai_generate(system_prompt, user_prompt, temperature=0.93):
+    """
+    Call AI generator. Tries Atria-Dawn-Preview first, then OpenRouter.
+    Returns None on failure so caller falls back to deterministic template.
+    """
+    # 1. Primary: Atria-Dawn-Preview agentic reasoning model
+    atria_text = _ask_atria(system_prompt, user_prompt)
+    if atria_text:
+        text = atria_text.strip()
         if text.startswith('"') and text.endswith('"'):
             text = text[1:-1]
         if text.startswith("'") and text.endswith("'"):
             text = text[1:-1]
         return text
-    except Exception as e:
-        print(f"  [AI] Request failed: {e}")
-        return None
+
+    # 2. Secondary: OpenRouter
+    if OPENROUTER_KEY and http:
+        try:
+            r = http.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {OPENROUTER_KEY}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/jannatarora107-ctrl/Ai-mail-sender",
+                    "X-Title": "Yash Arora Outreach"
+                },
+                json={
+                    "model": AI_MODEL,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt}
+                    ],
+                    "temperature": temperature,
+                    "max_tokens": 350
+                },
+                timeout=30
+            )
+            r.raise_for_status()
+            text = r.json()["choices"][0]["message"]["content"].strip()
+            if text.startswith('"') and text.endswith('"'):
+                text = text[1:-1]
+            if text.startswith("'") and text.endswith("'"):
+                text = text[1:-1]
+            return text
+        except Exception as e:
+            print(f"  [OpenRouter notice: {e}]")
+
+    return None
 
 
 # ─── Database I/O ──────────────────────────────────────────
