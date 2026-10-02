@@ -1,0 +1,31 @@
+name: Yash — Morning Brief (Daily Reel Script + Growth Tips)
+
+on:
+  schedule:
+    # 02:30 UTC = 8:00 AM IST (daily)
+    - cron: '30 2 * * *'
+  workflow_dispatch:  # Manual trigger anytime
+
+jobs:
+  send-morning-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Send Morning Brief to Yash
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python morning_brief.py
