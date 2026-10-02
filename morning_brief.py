@@ -526,38 +526,11 @@ def get_reel_script(topic_title, category):
 
 # ─── Email Builder ──────────────────────────────────────────
 def build_email(topic_title, reel_script, growth_tips, today_str, day_name):
-    divider = "-" * 55
-    return f"""Good morning Yash,
-
-Here is your daily creator brief for {day_name}, {today_str}.
-
-{divider}
-TODAY'S REEL TOPIC
-{divider}
+    # Pure clean direct copy-paste format — zero clutter, zero timestamps
+    return f"""TOPIC:
 {topic_title}
 
-{divider}
-READY-TO-FILM REEL SCRIPT
-{divider}
-{reel_script}
-
-{divider}
-PAGE GROWTH ACTION PLAN FOR TODAY
-{divider}
-{growth_tips}
-
-{divider}
-DAILY CHECKLIST
-{divider}
-- Film before 11:00 AM or after 5:00 PM for best lighting
-- Keep face in the first 2 seconds for algorithm retention
-- Reply to all comments within 30 minutes of posting
-- Post 2-3 interactive Stories today
-- Cold email outreach automation fires automatically tonight at 8:20 PM IST
-
-{divider}
-Tomorrow's brief arrives at 8:00 AM IST.
--- Yash Bot
+{reel_script.strip()}
 """
 
 
