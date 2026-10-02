@@ -1,0 +1,40 @@
+name: Keep Workflows Alive
+
+on:
+  schedule:
+    # Runs every day at 00:30 UTC — keeps repo "active" so GitHub never pauses scheduled workflows
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Keep Alive — Touch Last Active File
+        run: |
+          git config --global user.name "Keepalive Bot"
+          git config --global user.email "bot@yasharora.dev"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jannatarora107-ctrl/Ai-mail-sender
+          echo "last_active: $(date -u +%Y-%m-%dT%H:%M:%SZ)" > .keepalive
+          git add .keepalive
+          git commit -m "chore: keepalive $(date -u +%Y-%m-%d) [skip ci]"
+          git push
+
+      - name: Re-enable Scheduled Workflows (if GitHub paused them)
+        run: |
+          curl -s -X PUT \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/jannatarora107-ctrl/Ai-mail-sender/actions/workflows/371033389/enable
+          curl -s -X PUT \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/jannatarora107-ctrl/Ai-mail-sender/actions/workflows/372699379/enable
+          echo "Workflows re-enabled."
