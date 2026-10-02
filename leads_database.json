@@ -44,6 +44,168 @@
       "pain_point": "daily fresh malasada drops and lunch specials would grab more local attention with dedicated, high-contrast visual story cards.",
       "service_key": "social_creatives",
       "status": "pending"
+    },
+    {
+      "business": "Triple D's Bakery",
+      "owner": "Dorian",
+      "email": "dcuedbkaery@gmail.com",
+      "niche": "Custom Bakery (Nashville, TN)",
+      "pain_point": "custom order inquiries and seasonal specials often get buried in long DM threads without a dedicated visual announcement card.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Sunflower Bakehouse",
+      "owner": "Owner",
+      "email": "dine.sunflowerbakehouse@gmail.com",
+      "niche": "Vegan & Gluten-Free Bakery (Nashville, TN)",
+      "pain_point": "your allergy-friendly menu options deserve a clean, scannable mobile showcase so health-conscious locals can find you instantly.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Brina's Bakery",
+      "owner": "Brina",
+      "email": "brinasbakery@gmail.com",
+      "niche": "Artisan Bakery (Nashville, TN)",
+      "pain_point": "weekend custom cake drop announcements tend to get low reach without bold, high-contrast visual story cards.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Rachel's Dough Darling",
+      "owner": "Rachel",
+      "email": "rachelkbakes@gmail.com",
+      "niche": "Home Bakery (Nashville, TN)",
+      "pain_point": "home bakers often miss new customers because there is no quick mobile page showing your menu, prices, and ordering process in one place.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "le Bakery Sensual",
+      "owner": "Owner",
+      "email": "lebakerysensual@gmail.com",
+      "niche": "Artisan Cake Studio (Denver, CO)",
+      "pain_point": "stunning wedding and event cakes deserve an eye-catching digital showcase so couples can see your portfolio instantly on mobile.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Happiness and Sweets",
+      "owner": "Owner",
+      "email": "happinessandsweets@gmail.com",
+      "niche": "Custom Cake Bakery (Denver, CO)",
+      "pain_point": "handcrafted one-of-a-kind cakes often don't get the visibility they deserve without dedicated, scroll-stopping visual brand cards.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Mile High Pies and Cakes",
+      "owner": "Shannon",
+      "email": "milehighpiesandcakesdenver@gmail.com",
+      "niche": "Custom Cakes & Pies (Denver, CO)",
+      "pain_point": "new customers in Park Hill searching for custom pies and cakes currently have no quick mobile page to confirm your menu and request a quote.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Born2Bake",
+      "owner": "Owner",
+      "email": "born2bakeco@gmail.com",
+      "niche": "Cafe & Bakery (Littleton/Denver, CO)",
+      "pain_point": "wedding cake and custom pastry inquiries take longer to convert when customers can't scan a single mobile menu with your specialties and pricing.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Sweets 4 Days Bakery",
+      "owner": "Alesha",
+      "email": "sweets4daysbakery@gmail.com",
+      "niche": "Gourmet Baked Goods (Grand Rapids, MI)",
+      "pain_point": "custom gourmet drops and chocolate-covered items get buried in captions without bold, high-contrast announcement visuals.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Queen of Sweets",
+      "owner": "Ashley",
+      "email": "queenofsweetsbyas@gmail.com",
+      "niche": "Custom Cakes & Dessert Tables (Grand Rapids, MI)",
+      "pain_point": "dessert table setups and custom cake reveals would book faster with a dedicated mobile portfolio page clients can share instantly.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Equinox Pastries and Pops",
+      "owner": "Rachel",
+      "email": "equinoxpastriesandpops@gmail.com",
+      "niche": "Custom Cake Pops & Pastries (Grand Rapids, MI)",
+      "pain_point": "custom cake pop collections and seasonal drops need punchy visual announcement cards to stand out in a crowded local feed.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Van's Pastry Shoppe",
+      "owner": "Owner",
+      "email": "vanspastry@gmail.com",
+      "niche": "Classic Bakery since 1942 (Grand Rapids, MI)",
+      "pain_point": "long-standing bakeries risk losing walk-in traffic when customers can't instantly scan a QR menu at the counter during busy hours.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "The Angelic Oven Bakery",
+      "owner": "Owner",
+      "email": "theangelicovenbakery@gmail.com",
+      "niche": "Cookie & Baked Goods Bakery (Grand Rapids, MI)",
+      "pain_point": "cookie collections and seasonal baked goods get overlooked when there is no bold brand creative to announce new drops.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Thistle Baking Co.",
+      "owner": "Owner",
+      "email": "thistlebakingcomany@gmail.com",
+      "niche": "Artisan Bakery (Grand Rapids, MI)",
+      "pain_point": "pop-up and chef-shack bakeries need a clean 1-page mobile showcase so new customers can find and order from you even without a storefront.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Little Banana Bakery",
+      "owner": "Owner",
+      "email": "littlebananabakery@gmail.com",
+      "niche": "Bespoke Wedding Cakes (Portland, OR)",
+      "pain_point": "couples searching for wedding cakes often choose the bakery whose portfolio they can browse fastest on their phone.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Cascadia Kitchen",
+      "owner": "Owner",
+      "email": "cascadiakitchenpdx@gmail.com",
+      "niche": "Cottage Bakery (Hillsboro/Portland, OR)",
+      "pain_point": "single-owner cottage bakeries miss local foot traffic when there is no scannable QR menu or mobile page to share in community groups.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Baked By Beccs",
+      "owner": "Becs",
+      "email": "bakedbybeccs@gmail.com",
+      "niche": "Custom Cakes & Treats (Portland, OR)",
+      "pain_point": "custom cupcake and treat orders book faster when clients can see a visual menu with options and pricing on one mobile-friendly page.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "The Hummingbird Confectionery",
+      "owner": "Owner",
+      "email": "thehummingbirdconfectionery@gmail.com",
+      "niche": "Custom Cakes & Cupcakes (Vancouver, WA / Portland area)",
+      "pain_point": "custom cake and cupcake drops deserve eye-catching visual brand cards to drive pre-orders before your available dates fill up.",
+      "service_key": "social_creatives",
+      "status": "pending"
     }
   ],
   "stats": {
