@@ -27,66 +27,115 @@ from lead_engine import (
     DELAY_BETWEEN_MIN, DELAY_BETWEEN_MAX
 )
 
-# ─── Target Tier-2 Regional Hubs ───────────────────────────
-# Low inbox clutter, high email open rates for small shop owners
+# ─── Target Regions: HIGH EMAIL ENGAGEMENT ─────────────────
+# These owners check email 4-6x/day because their REVENUE flows through it:
+#   → Order confirmations, booking requests, supplier invoices, customer inquiries
+# Tier-2/3 cities = less inbox clutter = higher open rates
+
 TARGET_REGIONS = [
+    # ── US: Highest email-dependent small business hubs ──
     {
-        "city": "Grand Rapids", "state": "MI",
-        "niches": ["bakery", "coffee shop", "boutique", "florist", "brewery taproom"]
+        # Etsy capital of America — sellers check email every hour for order notifications
+        "city": "Nashville", "state": "TN",
+        "niches": ["wedding photographer", "wedding florist", "caterer", "etsy seller", "hair salon", "bakery"]
     },
     {
+        # Massive Etsy/Shopify seller base + food scene — email IS their order system
         "city": "Columbus", "state": "OH",
-        "niches": ["artisan bakery", "specialty coffee", "fashion boutique", "juice bar", "pizza shop"]
+        "niches": ["etsy shop owner", "shopify store owner", "pet groomer", "bakery", "florist", "nail salon"]
     },
     {
+        # Artisan economy, small batch makers — every order comes via email
+        "city": "Portland", "state": "ME",
+        "niches": ["etsy seller", "candle maker", "jewelry designer", "bakery", "photographer", "soap maker"]
+    },
+    {
+        # Fast growing, family businesses — owners respond to email like text messages
+        "city": "Boise", "state": "ID",
+        "niches": ["hair salon", "pet groomer", "florist", "bakery", "yoga studio", "tattoo studio"]
+    },
+    {
+        # Tourism-driven — every booking = email. Owners live in inbox during peak season
+        "city": "Savannah", "state": "GA",
+        "niches": ["wedding venue", "photographer", "caterer", "gift shop", "florist", "bed and breakfast"]
+    },
+    {
+        # Craft capital — makers sell through email orders and custom requests
+        "city": "Asheville", "state": "NC",
+        "niches": ["pottery studio", "candle maker", "bakery", "craft brewery", "soap maker", "jewelry designer"]
+    },
+    {
+        # Retail test market + massive independent shop scene
+        "city": "Grand Rapids", "state": "MI",
+        "niches": ["bakery", "coffee shop", "florist", "pet groomer", "boutique", "tattoo studio"]
+    },
+    {
+        # Tech-literate but approachable — Shopify sellers and DTC brands everywhere
         "city": "Salt Lake City", "state": "UT",
-        "niches": ["custom cakes", "catering", "specialty food", "yoga studio", "outdoor gear shop"]
+        "niches": ["shopify store owner", "etsy seller", "hair salon", "bakery", "yoga studio", "photographer"]
     },
+
+    # ── UK: Independent business owners who check email all day ──
     {
-        "city": "Charlotte", "state": "NC",
-        "niches": ["bakery", "cafe", "florist", "wellness studio", "barbershop"]
-    },
-    {
+        # Entrepreneurial, ignore London noise, check email between customers
         "city": "Manchester", "state": "UK",
-        "niches": ["independent coffee roaster", "sandwich shop", "bakery", "vintage shop"]
+        "niches": ["hair salon", "barber shop", "tattoo studio", "bakery", "florist", "nail salon"]
     },
     {
-        "city": "Leeds", "state": "UK",
-        "niches": ["cafe", "bakery", "independent bookshop", "craft beer bar"]
+        # Strong independent business culture — email = primary vendor channel
+        "city": "Bristol", "state": "UK",
+        "niches": ["etsy seller", "photographer", "cafe", "pottery studio", "candle maker", "bakery"]
+    },
+
+    # ── Europe: Highest email check rates in the world ──
+    {
+        # Dutch small business owners are hyper-digital — check email 5-6x/day
+        "city": "Utrecht", "state": "Netherlands",
+        "niches": ["hair salon", "photographer", "bakery", "florist", "bike shop", "cafe"]
     },
     {
-        "city": "Eindhoven", "state": "Netherlands",
-        "niches": ["cafe", "bakery", "design studio", "bike shop"]
+        # Scandinavian work culture = inbox zero obsession — they READ everything
+        "city": "Aarhus", "state": "Denmark",
+        "niches": ["bakery", "cafe", "photographer", "florist", "design studio", "gift shop"]
     },
 ]
 
-# Best service fit for each niche type
+# ─── Service Matching ──────────────────────────────────────
+# Maps each niche to the BEST micro-service for their pain point
 NICHE_SERVICE_MAP = {
+    # SOCIAL CREATIVES ($5-$10): Visual businesses that post daily/weekly
     "bakery": "social_creatives",
-    "artisan bakery": "social_creatives",
-    "custom cakes": "social_creatives",
-    "coffee shop": "qr_digital_menu",
-    "specialty coffee": "qr_digital_menu",
-    "independent coffee roaster": "qr_digital_menu",
-    "cafe": "qr_digital_menu",
-    "sandwich shop": "qr_digital_menu",
-    "pizza shop": "qr_digital_menu",
-    "juice bar": "qr_digital_menu",
-    "boutique": "social_creatives",
-    "fashion boutique": "social_creatives",
-    "vintage shop": "social_creatives",
+    "candle maker": "social_creatives",
+    "soap maker": "social_creatives",
+    "jewelry designer": "social_creatives",
+    "etsy seller": "social_creatives",
+    "etsy shop owner": "social_creatives",
+    "shopify store owner": "social_creatives",
     "florist": "social_creatives",
-    "wellness studio": "mobile_landing_page",
+    "boutique": "social_creatives",
+    "gift shop": "social_creatives",
+    "pottery studio": "social_creatives",
+    "craft brewery": "social_creatives",
+
+    # QR DIGITAL MENU ($15-$20): Walk-in businesses with menus/catalogs
+    "coffee shop": "qr_digital_menu",
+    "cafe": "qr_digital_menu",
+    "bed and breakfast": "qr_digital_menu",
+
+    # MOBILE LANDING PAGE ($25-$35): Booking/appointment-based businesses
+    "hair salon": "mobile_landing_page",
+    "nail salon": "mobile_landing_page",
+    "barber shop": "mobile_landing_page",
+    "tattoo studio": "mobile_landing_page",
+    "pet groomer": "mobile_landing_page",
     "yoga studio": "mobile_landing_page",
-    "barbershop": "mobile_landing_page",
-    "brewery taproom": "qr_digital_menu",
-    "craft beer bar": "qr_digital_menu",
-    "catering": "mobile_landing_page",
-    "outdoor gear shop": "mobile_landing_page",
+    "photographer": "mobile_landing_page",
+    "wedding photographer": "mobile_landing_page",
+    "wedding florist": "social_creatives",
+    "wedding venue": "mobile_landing_page",
+    "caterer": "mobile_landing_page",
     "design studio": "mobile_landing_page",
     "bike shop": "mobile_landing_page",
-    "independent bookshop": "social_creatives",
-    "specialty food": "social_creatives",
 }
 
 
