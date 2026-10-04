@@ -35,29 +35,68 @@ DB_FILE  = os.path.join(DATA_DIR, "leads_database.json")
 DNC_FILE = os.path.join(DATA_DIR, "do_not_contact.json")
 SENT_LOG = os.path.join(DATA_DIR, "sent_emails_log.txt")
 
-MAX_SENDS_PER_DAY = 35        # Under 40 — safe for personal Gmail
+MAX_SENDS_PER_DAY = 20        # Under 40 — safe for personal Gmail
 DELAY_BETWEEN_MIN = 100       # seconds
 DELAY_BETWEEN_MAX = 220       # seconds
 
-# ─── Micro-Services Catalog ────────────────────────────────
+# ─── Services Catalog ──────────────────────────────────────
 SERVICES = {
+    # ── Small (\$5-\$35) ─────────────────────────────────────
     "social_creatives": {
         "label": "Custom Brand Creatives & Announcement Cards",
-        "price": "$5\u2013$10",
-        "what": "clean, mobile-first brand creatives and visual announcement cards that make your products and weekly specials stand out",
-        "free_offer": "Would it be okay if I put together a quick, free sample design in your brand style?"
+        "price": "$5-$10",
+        "what": "clean, mobile-first brand creatives and visual announcement cards that make your products and weekly specials stand out in 3 seconds",
+        "free_offer": "Would it be okay if I put together a quick free sample card in your brand style?"
     },
     "qr_digital_menu": {
-        "label": "QR Digital Menu & Catalog",
-        "price": "$15\u2013$20",
-        "what": "an interactive mobile menu customers scan on their phones to browse items and order via WhatsApp",
-        "free_offer": "Would it be okay if I set up a free digital preview of your menu to check out?"
+        "label": "QR Digital Menu",
+        "price": "$15-$20",
+        "what": "a scannable QR menu customers pull up on their phones to browse your full service and pricing list",
+        "free_offer": "Would it be okay if I set up a free digital menu preview you can check out?"
     },
     "mobile_landing_page": {
         "label": "1-Page Mobile Showcase",
-        "price": "$25\u2013$35",
-        "what": "a fast, 1-page mobile layout showing your packages, customer reviews, and a direct booking button",
-        "free_offer": "Would it be okay if I put together a free mobile preview layout for your business?"
+        "price": "$25-$35",
+        "what": "a fast 1-page mobile layout showing your packages, reviews, and a direct booking button — live in 48 hours",
+        "free_offer": "Would it be okay if I build a free mobile preview page for your business?"
+    },
+    # ── Medium (\$40-\$120) ──────────────────────────────────
+    "instagram_post_pack": {
+        "label": "Monthly Instagram Post Pack",
+        "price": "$40-$80/mo",
+        "what": "8-12 ready-to-post branded graphics every month — promotional posts, quote cards, and story templates in your style",
+        "free_offer": "Would it be okay if I design 2 free sample posts to show you what your feed could look like?"
+    },
+    "logo_brand_kit": {
+        "label": "Logo & Brand Kit",
+        "price": "$50-$100",
+        "what": "a professional logo, color palette, and font set delivered in 3 days — everything you need to look consistent across all platforms",
+        "free_offer": "Would it be okay if I sketch a free rough concept just to show you one direction?"
+    },
+    "reel_video_edit": {
+        "label": "Reel & Short Video Editing",
+        "price": "$30-$60 per video",
+        "what": "send me your raw footage and I return a polished, trending-audio reel in 24 hours — cuts, captions, hooks, all done",
+        "free_offer": "Would it be okay if I edit a 15-second sample clip from your existing footage for free?"
+    },
+    # ── Large (\$150-\$500) ──────────────────────────────────
+    "full_website": {
+        "label": "Full Mobile-First Website",
+        "price": "$150-$300",
+        "what": "a complete 3-5 page website optimized for mobile, built in one week — home, menu/services, about, contact, and Google-ready",
+        "free_offer": "Would it be okay if I put together a free homepage wireframe mockup to show what it could look like?"
+    },
+    "ai_ad_creatives": {
+        "label": "AI-Powered Ad Creatives",
+        "price": "$75-$200",
+        "what": "a set of 5-10 Facebook and Instagram ad images with AI-generated copy, tested hooks, and audience targeting recommendations",
+        "free_offer": "Would it be okay if I put together one free sample ad concept for your business?"
+    },
+    "graphic_design_monthly": {
+        "label": "Monthly Graphic Design Retainer",
+        "price": "$100-$200/mo",
+        "what": "unlimited design requests each month — menus, flyers, social posts, banners, anything you need in your brand style",
+        "free_offer": "Would it be okay if I design one piece for free this week so you can see the quality first?"
     }
 }
 
