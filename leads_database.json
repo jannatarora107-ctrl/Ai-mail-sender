@@ -275,6 +275,177 @@
       "sent_at": "2026-10-02 22:57 UTC",
       "message_id": "<179098181965.2353.4924897738634472524@gmail.com>",
       "subject_used": "idea for the hummingbird confectionery"
+    },
+    {
+      "business": "Emma Cakes",
+      "owner": "Emma",
+      "email": "emmacakesseattle@gmail.com",
+      "niche": "Custom Cake Studio (Seattle, WA)",
+      "pain_point": "wedding and event cake inquiries take longer to convert without a clean mobile portfolio showing your designs and pricing.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "The FiNe Baking Co.",
+      "owner": "Owner",
+      "email": "thefinebakingcompany@gmail.com",
+      "niche": "Custom Bakery (Seattle, WA)",
+      "pain_point": "custom cupcake and cake orders get overlooked when there is no bold brand creative to announce new seasonal drops.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Cascadia Cake Design",
+      "owner": "Owner",
+      "email": "cascadiacakes@gmail.com",
+      "niche": "Wedding Cake Studio (Seattle, WA)",
+      "pain_point": "couples searching for wedding cakes choose the bakery whose portfolio they can browse fastest on their phone.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Eat More Cake by Candice",
+      "owner": "Candice",
+      "email": "eatmorecakebycandice@gmail.com",
+      "niche": "Home Bakery - Events (Seattle, WA)",
+      "pain_point": "home bakers miss new clients because there is no quick mobile page showing your menu and ordering process in one place.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Fresh Flours Bakery",
+      "owner": "Owner",
+      "email": "freshfloursseattle@gmail.com",
+      "niche": "Multi-location Bakery (Seattle, WA)",
+      "pain_point": "special order cut-off dates and seasonal menus get buried when customers cannot scan a clear QR menu at the counter.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Bloom Coffee Co.",
+      "owner": "Owner",
+      "email": "bloomcoffeecoatl@gmail.com",
+      "niche": "Woman-Owned Coffee Shop (Atlanta, GA)",
+      "pain_point": "customers waiting in line currently have no QR menu to browse your food and coffee options before reaching the counter.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Flow Coffee Roasters",
+      "owner": "Owner",
+      "email": "flowcoffeeatl@gmail.com",
+      "niche": "Specialty Coffee Roaster (Atlanta, GA)",
+      "pain_point": "specialty roast drops and wholesale inquiry options need a dedicated 1-page mobile showcase to reach local buyers instantly.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "CEG Bakery",
+      "owner": "Owner",
+      "email": "confiserieeg@gmail.com",
+      "niche": "Gourmet Bakery & Cafe (Atlanta, GA)",
+      "pain_point": "gourmet pastry and custom cake drops deserve eye-catching visual brand cards to drive pre-orders before spots fill up.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Cafe Le Bon",
+      "owner": "Owner",
+      "email": "cafelebon43@gmail.com",
+      "niche": "Cafe & Dessert Shop (Roswell, GA)",
+      "pain_point": "tea and dessert specials get lost in long captions without bold announcement visuals that stop the scroll.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Ginkgo Bakery Cafe",
+      "owner": "Owner",
+      "email": "ginkgoduluth@gmail.com",
+      "niche": "Bakery & Cafe (Duluth, GA)",
+      "pain_point": "bakery cafe daily specials would drive more walk-ins with a scannable QR menu customers can check before arriving.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Cake Doll LLC",
+      "owner": "Owner",
+      "email": "cakedollarizona@gmail.com",
+      "niche": "Home-Based Custom Cakes (Phoenix, AZ)",
+      "pain_point": "licensed home bakeries miss local clients because there is no quick mobile page showing your portfolio and pricing clearly.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "CakesbyStiggy",
+      "owner": "Stiggy",
+      "email": "cakesbystiggy@gmail.com",
+      "niche": "Custom Cake Business (Phoenix, AZ)",
+      "pain_point": "wedding cake consultations and custom orders convert faster when clients see a clean visual portfolio on mobile before reaching out.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Triple Delight Bakery",
+      "owner": "Owner",
+      "email": "tripledelightbakery3@gmail.com",
+      "niche": "Family-Owned Bakery (Phoenix, AZ)",
+      "pain_point": "family bakeries lose walk-in traffic when customers cannot quickly scan a QR menu at the counter during peak hours.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Amour de Sucre",
+      "owner": "Owner",
+      "email": "amourdesucre.az@gmail.com",
+      "niche": "Custom Cakes & Pastries (Phoenix, AZ)",
+      "pain_point": "handcrafted custom cake drops need bold visual brand cards to stand out in a crowded Phoenix dessert market.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Life's Sweet Inc.",
+      "owner": "Owner",
+      "email": "lifessweetinc@gmail.com",
+      "niche": "Custom Cakes & Treats (Chicago, IL)",
+      "pain_point": "family-owned custom cake businesses miss events bookings when clients cannot see a clear mobile portfolio and pricing page.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Brown Sugar Bakery",
+      "owner": "Owner",
+      "email": "brownsugarbakery75@gmail.com",
+      "niche": "Southern-Style Bakery (Chicago, IL)",
+      "pain_point": "southern-style custom cake and cupcake drops deserve high-contrast visual announcement cards to drive pre-orders.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "CarmieCakes",
+      "owner": "Carmie",
+      "email": "4carmiecakes@gmail.com",
+      "niche": "Custom Cakes & Cookies (Chicago, IL)",
+      "pain_point": "custom-designed cake and cookie collections get overlooked without bold brand creatives to announce new drops on social.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Ambrosia Euro-American Patisserie",
+      "owner": "Owner",
+      "email": "ambrosiaeuro@gmail.com",
+      "niche": "Artisan Patisserie (Barrington, IL)",
+      "pain_point": "European artisan pastries and custom cakes deserve a clean mobile showcase so local clients can browse and inquire instantly.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Pie Pie My Darling",
+      "owner": "Owner",
+      "email": "piepiemydarling@gmail.com",
+      "niche": "Vegan Cakes & Pastries (Chicago, IL)",
+      "pain_point": "vegan bakeries reach more health-conscious customers with a dedicated 1-page mobile page showing menu options and order process.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
     }
   ],
   "stats": {
