@@ -446,6 +446,231 @@
       "pain_point": "vegan bakeries reach more health-conscious customers with a dedicated 1-page mobile page showing menu options and order process.",
       "service_key": "mobile_landing_page",
       "status": "pending"
+    },
+    {
+      "business": "Complete Beauty Bar",
+      "owner": "Owner",
+      "email": "completebeautybar@gmail.com",
+      "niche": "Beauty Bar & Salon (Houston, TX)",
+      "pain_point": "weekly nail and beauty specials get lost in plain text captions without eye-catching visual brand cards to stop the scroll.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "ICU Lookin Barber Studio",
+      "owner": "Owner",
+      "email": "iculookinbarberstudio@gmail.com",
+      "niche": "Barbershop (Houston, TX)",
+      "pain_point": "barbershop walk-in traffic drops when customers can't quickly scan a QR menu of services and pricing before arriving.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Trademark Salon",
+      "owner": "Owner",
+      "email": "trademarksalon@gmail.com",
+      "niche": "Hair Salon (Houston, TX)",
+      "pain_point": "new clients searching for a salon can't find your service menu and pricing fast enough on mobile before booking elsewhere.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Prestigious Cuts",
+      "owner": "Owner",
+      "email": "prestigious24@gmail.com",
+      "niche": "Barbershop (Houston, TX)",
+      "pain_point": "fresh cut photos and weekly promos deserve bold announcement cards that make followers stop scrolling and book instantly.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Sarath's Barbershop",
+      "owner": "Sarath",
+      "email": "sarathsbarbershop@gmail.com",
+      "niche": "Barbershop (Houston, TX)",
+      "pain_point": "loyal customers and new walk-ins both benefit from a QR menu at the chair showing all available services and add-on prices.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Mankind Barbers",
+      "owner": "Owner",
+      "email": "mankind.barbershop22@gmail.com",
+      "niche": "Barbershop (Houston, TX)",
+      "pain_point": "a clean 1-page mobile showcase showing your barbershop vibe, services, and booking link converts Instagram visitors to booked clients.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Caballeros Barbershop",
+      "owner": "Owner",
+      "email": "caballerosbarbershopusa@gmail.com",
+      "niche": "Barbershop (Houston, TX)",
+      "pain_point": "barbershops with no digital menu lose walk-ins who want to know wait times and pricing before stepping in.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Spa La La Tampa",
+      "owner": "Owner",
+      "email": "spalalatampa@gmail.com",
+      "niche": "Spa & Nail Salon (Tampa, FL)",
+      "pain_point": "spa service menus and seasonal nail art promos get overlooked without vibrant visual brand cards on social media.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Capucci Nails & Spa",
+      "owner": "Owner",
+      "email": "capuccinailspa@gmail.com",
+      "niche": "Nail & Spa (Tampa, FL)",
+      "pain_point": "new clients need a clear mobile page showing your full service menu, pricing, and booking link before choosing a salon.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Lamia Nail Bar of Tampa",
+      "owner": "Owner",
+      "email": "lamianailbaroftampa@gmail.com",
+      "niche": "Nail Bar (Tampa, FL)",
+      "pain_point": "nail bar specials and seasonal collections drive more bookings with bold, scrollstopping announcement cards.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Trendy Nail Bar",
+      "owner": "Owner",
+      "email": "trendynailbartampa@gmail.com",
+      "niche": "Nail Bar (Tampa, FL)",
+      "pain_point": "trendy nail designs deserve equally trendy visual posts that drive saves, shares, and direct booking DMs.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Le Reve Nails & Spa",
+      "owner": "Owner",
+      "email": "lerevenailstampa@gmail.com",
+      "niche": "Nail & Spa (Tampa, FL)",
+      "pain_point": "clients choosing between nail salons decide faster when they can scan a QR menu showing services and pricing before walking in.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Sole Nails Lounge",
+      "owner": "Owner",
+      "email": "solenails813@gmail.com",
+      "niche": "Nail Lounge (Tampa, FL)",
+      "pain_point": "a 1-page mobile showcase of your nail lounge ambiance, services, and booking link converts Instagram visitors into booked appointments.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Envy Nails & Spa",
+      "owner": "Owner",
+      "email": "envynailsdowntown@gmail.com",
+      "niche": "Nail & Spa (Orlando, FL)",
+      "pain_point": "downtown nail salons lose potential clients who browse Instagram but find no quick link to see services or book online.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Eda Nail Studio",
+      "owner": "Owner",
+      "email": "edanailsstudio@gmail.com",
+      "niche": "Nail Studio (Orlando, FL)",
+      "pain_point": "nail studio seasonal designs and promotions need bold visual cards to stand out in Orlando's competitive beauty market.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "Venus Nail Lounge and Spa",
+      "owner": "Owner",
+      "email": "venusnaillounge2021@gmail.com",
+      "niche": "Nail Lounge & Spa (Orlando, FL)",
+      "pain_point": "luxury nail lounge services deserve a clean digital menu clients can scan at reception to explore upgrades and add-ons.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "Anita's Flower Shop",
+      "owner": "Anita",
+      "email": "anitasflowershop169@gmail.com",
+      "niche": "Florist (Minneapolis, MN)",
+      "pain_point": "seasonal arrangements and wedding bouquet portfolios drive more inquiries with a clean 1-page mobile showcase clients can share.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Moonlight Floral",
+      "owner": "Owner",
+      "email": "moonlightfloralshop@gmail.com",
+      "niche": "Florist (Minneapolis, MN)",
+      "pain_point": "floral arrangement drops and holiday specials get buried in text without bold visual announcement cards that stop the scroll.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "1341 Floral Designs",
+      "owner": "Owner",
+      "email": "1341floraldesigns@gmail.com",
+      "niche": "Florist (Minneapolis, MN)",
+      "pain_point": "custom floral design clients convert faster when they can browse your full portfolio and request quotes from one mobile page.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Gardenias Florist",
+      "owner": "Owner",
+      "email": "gardeniasflorist@gmail.com",
+      "niche": "Florist (Minneapolis, MN)",
+      "pain_point": "walk-in customers and event planners need a scannable QR menu showing your arrangement categories and starting prices.",
+      "service_key": "qr_digital_menu",
+      "status": "pending"
+    },
+    {
+      "business": "MillerHouse Flowers",
+      "owner": "Owner",
+      "email": "millerhouseflowers@gmail.com",
+      "niche": "Florist (Minneapolis, MN)",
+      "pain_point": "high-end floral designers lose bookings when potential clients can't quickly browse your style and pricing on mobile.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Urban Blooms Minneapolis",
+      "owner": "Owner",
+      "email": "urbanbloomsmpls@gmail.com",
+      "niche": "Urban Florist (Minneapolis, MN)",
+      "pain_point": "urban flower shop weekly drops and event specials need scroll-stopping visual brand cards to grow your Instagram following.",
+      "service_key": "social_creatives",
+      "status": "pending"
+    },
+    {
+      "business": "The Local Petal",
+      "owner": "Owner",
+      "email": "thelocalpetal@gmail.com",
+      "niche": "Boutique Florist (Minneapolis, MN)",
+      "pain_point": "boutique florists build faster trust with a clean mobile page showing your story, past work, and easy inquiry button.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Hummingbird Floral MN",
+      "owner": "Owner",
+      "email": "hummingbirdfloralmn@gmail.com",
+      "niche": "Florist (Minneapolis/St. Paul, MN)",
+      "pain_point": "floral studios serving two cities need a clear digital presence showing service areas, galleries, and booking info in one page.",
+      "service_key": "mobile_landing_page",
+      "status": "pending"
+    },
+    {
+      "business": "Maria's Hair Designer",
+      "owner": "Maria",
+      "email": "charitous2000@gmail.com",
+      "niche": "Hair Salon (Houston, TX)",
+      "pain_point": "hair salon before-and-after transformations deserve bold visual brand cards that drive new bookings from Instagram followers.",
+      "service_key": "social_creatives",
+      "status": "pending"
     }
   ],
   "stats": {
