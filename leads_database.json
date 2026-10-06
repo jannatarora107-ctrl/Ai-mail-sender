@@ -283,8 +283,11 @@
       "niche": "Custom Cake Studio (Seattle, WA)",
       "pain_point": "wedding and event cake inquiries take longer to convert without a clean mobile portfolio showing your designs and pricing.",
       "service_key": "mobile_landing_page",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:31 UTC",
+      "message_id": "<179124307726.2351.16674234314719649863@gmail.com>",
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** Emma Cakes (Custom Cake Studio, Seattle, WA)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City Context:** Custom Cake Studio (Seattle, WA)\n   - **Constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Must sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct Constraints:**\n   - 3-7 words\n   - Lowercase except proper nouns (so \"Emma Cakes\" or \"Seattle\" could be proper nouns, but need to check if they count as proper nouns here. The business is \"Emma Cakes (Custom Cake Studio (Seattle, WA))\". I can use \"Emma\" or \"Seattle\" as proper nouns, but need to keep everything else lowercase.)\n   - Casual personal note, not marketing\n   - Genuine curiosity, not clickbait\n   - Specific to the business\n   - No emojis, all caps, exclamation marks, question marks\n   - Avoid specific banned phrases\n\n3.  **"
     },
     {
       "business": "The FiNe Baking Co.",
@@ -383,8 +386,11 @@
       "niche": "Bakery & Cafe (Duluth, GA)",
       "pain_point": "bakery cafe daily specials would drive more walk-ins with a scannable QR menu customers can check before arriving.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:40 UTC",
+      "message_id": "<179124362601.2351.9907616264935914537@gmail.com>",
+      "subject_used": "ginkgo bakery cafe menu on every phone"
     },
     {
       "business": "Cake Doll LLC",
@@ -393,8 +399,11 @@
       "niche": "Home-Based Custom Cakes (Phoenix, AZ)",
       "pain_point": "licensed home bakeries miss local clients because there is no quick mobile page showing your portfolio and pricing clearly.",
       "service_key": "mobile_landing_page",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:43 UTC",
+      "message_id": "<179124380657.2351.12457783057872482300@gmail.com>",
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Target:** Small business owner\n   - **Business:** Cake Doll LLC (Home-Based Custom Cakes, Phoenix, AZ)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours\n   - **Constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Must sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business & Context:**\n   - Business: Cake Doll LLC\n   - Service: Custom cakes, home-based, Phoenix, AZ\n   - Offer: 1-page mobile layout with packages, reviews, booking button, 48-hour turnaround\n   - Need a subject line that feels personal, casual, not marketing-y, specific, curious, 3-7 words, lowercase except proper nouns, no banned phrases, no emojis/caps/excl/quest marks.\n\n3.  **Brainstorming Key Elements:**\n   - Cake Doll LLC (proper noun, can use)\n   - Phoenix, AZ (location)\n   - Custom cakes\n   - Mobile layout / 1-page\n   - Packages, reviews"
     },
     {
       "business": "CakesbyStiggy",
@@ -415,8 +424,11 @@
       "niche": "Family-Owned Bakery (Phoenix, AZ)",
       "pain_point": "family bakeries lose walk-in traffic when customers cannot quickly scan a QR menu at the counter during peak hours.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:47 UTC",
+      "message_id": "<179124402400.2351.5137267244576481317@gmail.com>",
+      "subject_used": "a thought about triple delight's menu"
     },
     {
       "business": "Amour de Sucre",
@@ -447,8 +459,11 @@
       "niche": "Southern-Style Bakery (Chicago, IL)",
       "pain_point": "southern-style custom cake and cupcake drops deserve high-contrast visual announcement cards to drive pre-orders.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:51 UTC",
+      "message_id": "<179124430057.2351.1850612125361963940@gmail.com>",
+      "subject_used": "Here是ider: I: brown sugar\"))  # False\nMaintaining a consistent color scheme across different layers aesthetic is for your specials\nshop visual stop browse\nmaking browse\nyour weekly bakery weekly\n---\nOutput: shop visual stop browse"
     },
     {
       "business": "CarmieCakes",
@@ -501,8 +516,11 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "barbershop walk-in traffic drops when customers can't quickly scan a QR menu of services and pricing before arriving.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-05 23:58 UTC",
+      "message_id": "<179124470967.2351.5782138354719437621@gmail.com>",
+      "subject_used": "walk-in pricing without the laminated menus"
     },
     {
       "business": "Trademark Salon",
@@ -599,8 +617,11 @@
       "niche": "Nail Bar (Tampa, FL)",
       "pain_point": "trendy nail designs deserve equally trendy visual posts that drive saves, shares, and direct booking DMs.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-06 00:11 UTC",
+      "message_id": "<179124548165.2351.16113996835163965316@gmail.com>",
+      "subject_used": "your nail bar's specials in 3 seconds"
     },
     {
       "business": "Le Reve Nails & Spa",
@@ -693,7 +714,8 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "custom floral design clients convert faster when they can browse your full portfolio and request quotes from one mobile page.",
       "service_key": "mobile_landing_page",
-      "status": "pending"
+      "status": "failed",
+      "fail_reason": "SMTP error"
     },
     {
       "business": "Gardenias Florist",
@@ -702,7 +724,10 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "walk-in customers and event planners need a scannable QR menu showing your arrangement categories and starting prices.",
       "service_key": "qr_digital_menu",
-      "status": "pending"
+      "status": "sent",
+      "sent_at": "2026-10-06 00:17 UTC",
+      "message_id": "<179124586458.2351.10373997895951999052@gmail.com>",
+      "subject_used": "loved browsing your arrangements on my phone"
     },
     {
       "business": "MillerHouse Flowers",
@@ -711,7 +736,10 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "high-end floral designers lose bookings when potential clients can't quickly browse your style and pricing on mobile.",
       "service_key": "mobile_landing_page",
-      "status": "pending"
+      "status": "sent",
+      "sent_at": "2026-10-06 00:22 UTC",
+      "message_id": "<179124613056.2351.12670395645220310712@gmail.com>",
+      "subject_used": "millerhouse flowers on one mobile page"
     },
     {
       "business": "Urban Blooms Minneapolis",
@@ -720,7 +748,8 @@
       "niche": "Urban Florist (Minneapolis, MN)",
       "pain_point": "urban flower shop weekly drops and event specials need scroll-stopping visual brand cards to grow your Instagram following.",
       "service_key": "social_creatives",
-      "status": "pending"
+      "status": "failed",
+      "fail_reason": "SMTP error"
     },
     {
       "business": "The Local Petal",
@@ -729,7 +758,8 @@
       "niche": "Boutique Florist (Minneapolis, MN)",
       "pain_point": "boutique florists build faster trust with a clean mobile page showing your story, past work, and easy inquiry button.",
       "service_key": "mobile_landing_page",
-      "status": "pending"
+      "status": "failed",
+      "fail_reason": "SMTP error"
     },
     {
       "business": "Hummingbird Floral MN",
@@ -738,7 +768,8 @@
       "niche": "Florist (Minneapolis/St. Paul, MN)",
       "pain_point": "floral studios serving two cities need a clear digital presence showing service areas, galleries, and booking info in one page.",
       "service_key": "mobile_landing_page",
-      "status": "pending"
+      "status": "failed",
+      "fail_reason": "SMTP error"
     },
     {
       "business": "Maria's Hair Designer",
@@ -747,12 +778,13 @@
       "niche": "Hair Salon (Houston, TX)",
       "pain_point": "hair salon before-and-after transformations deserve bold visual brand cards that drive new bookings from Instagram followers.",
       "service_key": "social_creatives",
-      "status": "pending"
+      "status": "failed",
+      "fail_reason": "SMTP error"
     }
   ],
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-04 21:52 UTC"
+    "last_run": "2026-10-06 00:31 UTC"
   }
 }
