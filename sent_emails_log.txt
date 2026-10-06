@@ -221,3 +221,41 @@ Output: shop visual stop browse
 [2026-10-06 00:11:22] SENT -> trendynailbartampa@gmail.com | Subject: your nail bar's specials in 3 seconds
 [2026-10-06 00:17:46] SENT -> gardeniasflorist@gmail.com | Subject: loved browsing your arrangements on my phone
 [2026-10-06 00:22:11] SENT -> millerhouseflowers@gmail.com | Subject: millerhouse flowers on one mobile page
+[2026-10-06 21:53:42] SENT -> ambrosiaeuro@gmail.com | Subject: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Business:** Ambrosia Euro-American Patisserie (Artisan Patisserie in Barrington, IL)
+   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.
+   - **City context:** Barrington, IL (artisan patisserie)
+   - **Constraints for subject line:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Sound like a casual personal note, NOT marketing
+     - Spark genuine curiosity without being clickbait
+     - Must feel specific to THIS business
+     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Business & Service:**
+   - Business: Ambrosia Euro-American Patisserie
+   - Location: Barrington, IL
+   - Type: Artisan patisserie
+   - Need: Mobile layout showing packages, reviews, booking button, 48-hour turnaround
+   - Target: Small business owner
+
+3.  **Brainstorming Angles (casual, personal, specific, no marketing speak):**
+   - Need to avoid: "quick question", "just reaching out", "opportunity", "offer", "free", "help", "?", "!", emojis, all caps
+   - Must be 3-
+[2026-10-06 22:05:51] SENT -> thelocalpetal@gmail.com | Subject: thelocalpetal.com on a phone
+[2026-10-06 22:09:10] SENT -> hummingbirdfloralmn@gmail.com | Subject: tried booking hummingbird on my phone
+[2026-10-06 22:13:25] SENT -> bakemehappygf@gmail.com | Subject: Re: idea for bake me happy
+[2026-10-06 22:15:34] SENT -> brokenmug2017@gmail.com | Subject: Re: idea for the broken mug
+[2026-10-06 22:18:21] SENT -> edgewoodbakerygr@gmail.com | Subject: Re: idea for edgewood bakery
+[2026-10-06 22:21:08] SENT -> k3quarter@gmail.com | Subject: Re: re conservation coffee's feed
+[2026-10-06 22:23:42] SENT -> buddasbakery@gmail.com | Subject: Re: thought about budda's hawaiian bakery
+[2026-10-06 22:25:45] SENT -> dcuedbkaery@gmail.com | Subject: Re: thought about triple d's bakery
+[2026-10-06 22:27:53] SENT -> dine.sunflowerbakehouse@gmail.com | Subject: Re: re sunflower bakehouse's feed
+[2026-10-06 22:29:52] SENT -> brinasbakery@gmail.com | Subject: Re: re brina's bakery's feed
+[2026-10-06 22:32:39] SENT -> rachelkbakes@gmail.com | Subject: Re: something for rachel's dough darling
+[2026-10-06 22:34:58] SENT -> lebakerysensual@gmail.com | Subject: Re: re le bakery sensual's feed
