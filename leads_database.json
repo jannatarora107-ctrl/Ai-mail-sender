@@ -137,10 +137,11 @@
       "niche": "Custom Cake Bakery (Denver, CO)",
       "pain_point": "handcrafted one-of-a-kind cakes often don't get the visibility they deserve without dedicated, scroll-stopping visual brand cards.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:06 UTC",
       "message_id": "<179097876594.2353.10398994639754148186@gmail.com>",
-      "subject_used": "idea for happiness and sweets"
+      "subject_used": "idea for happiness and sweets",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Mile High Pies and Cakes",
@@ -149,10 +150,11 @@
       "niche": "Custom Cakes & Pies (Denver, CO)",
       "pain_point": "new customers in Park Hill searching for custom pies and cakes currently have no quick mobile page to confirm your menu and request a quote.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:10 UTC",
       "message_id": "<179097900737.2353.12512675972771120148@gmail.com>",
-      "subject_used": "idea for mile high pies and cakes"
+      "subject_used": "idea for mile high pies and cakes",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Born2Bake",
@@ -161,10 +163,11 @@
       "niche": "Cafe & Bakery (Littleton/Denver, CO)",
       "pain_point": "wedding cake and custom pastry inquiries take longer to convert when customers can't scan a single mobile menu with your specialties and pricing.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:13 UTC",
       "message_id": "<179097922717.2353.14482903992096436788@gmail.com>",
-      "subject_used": "thought about born2bake"
+      "subject_used": "thought about born2bake",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Sweets 4 Days Bakery",
@@ -173,10 +176,11 @@
       "niche": "Gourmet Baked Goods (Grand Rapids, MI)",
       "pain_point": "custom gourmet drops and chocolate-covered items get buried in captions without bold, high-contrast announcement visuals.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:17 UTC",
       "message_id": "<179097944058.2353.7102763502732966102@gmail.com>",
-      "subject_used": "re sweets 4 days bakery's feed"
+      "subject_used": "re sweets 4 days bakery's feed",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Queen of Sweets",
@@ -185,10 +189,11 @@
       "niche": "Custom Cakes & Dessert Tables (Grand Rapids, MI)",
       "pain_point": "dessert table setups and custom cake reveals would book faster with a dedicated mobile portfolio page clients can share instantly.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:21 UTC",
       "message_id": "<179097968445.2353.143494433059245408@gmail.com>",
-      "subject_used": "something for queen of sweets"
+      "subject_used": "something for queen of sweets",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Equinox Pastries and Pops",
@@ -197,10 +202,11 @@
       "niche": "Custom Cake Pops & Pastries (Grand Rapids, MI)",
       "pain_point": "custom cake pop collections and seasonal drops need punchy visual announcement cards to stand out in a crowded local feed.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:24 UTC",
       "message_id": "<179097988195.2353.337993665762967629@gmail.com>",
-      "subject_used": "thought about equinox pastries and pops"
+      "subject_used": "thought about equinox pastries and pops",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Van's Pastry Shoppe",
@@ -209,10 +215,11 @@
       "niche": "Classic Bakery since 1942 (Grand Rapids, MI)",
       "pain_point": "long-standing bakeries risk losing walk-in traffic when customers can't instantly scan a QR menu at the counter during busy hours.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:30 UTC",
       "message_id": "<179098020893.2353.14835858666566016420@gmail.com>",
-      "subject_used": "idea for van's pastry shoppe"
+      "subject_used": "idea for van's pastry shoppe",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "The Angelic Oven Bakery",
@@ -221,10 +228,11 @@
       "niche": "Cookie & Baked Goods Bakery (Grand Rapids, MI)",
       "pain_point": "cookie collections and seasonal baked goods get overlooked when there is no bold brand creative to announce new drops.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:34 UTC",
       "message_id": "<179098048272.2353.3866394273040355628@gmail.com>",
-      "subject_used": "thought about the angelic oven bakery"
+      "subject_used": "thought about the angelic oven bakery",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Thistle Baking Co.",
@@ -233,10 +241,11 @@
       "niche": "Artisan Bakery (Grand Rapids, MI)",
       "pain_point": "pop-up and chef-shack bakeries need a clean 1-page mobile showcase so new customers can find and order from you even without a storefront.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:39 UTC",
       "message_id": "<179098079100.2353.17630596536998476329@gmail.com>",
-      "subject_used": "thought about thistle baking co."
+      "subject_used": "thought about thistle baking co.",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Little Banana Bakery",
@@ -245,10 +254,11 @@
       "niche": "Bespoke Wedding Cakes (Portland, OR)",
       "pain_point": "couples searching for wedding cakes often choose the bakery whose portfolio they can browse fastest on their phone.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-02 22:43 UTC",
       "message_id": "<179098101303.2353.8283885205948959362@gmail.com>",
-      "subject_used": "idea for little banana bakery"
+      "subject_used": "idea for little banana bakery",
+      "followup_1_at": "2026-10-07 22:29 UTC"
     },
     {
       "business": "Cascadia Kitchen",
@@ -386,8 +396,11 @@
       "niche": "Cafe & Dessert Shop (Roswell, GA)",
       "pain_point": "tea and dessert specials get lost in long captions without bold announcement visuals that stop the scroll.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-07 22:07 UTC",
+      "message_id": "<179141086160.2445.12588062882310600786@gmail.com>",
+      "subject_used": "your pastries deserve better photos"
     },
     {
       "business": "Ginkgo Bakery Cafe",
@@ -727,8 +740,11 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "custom floral design clients convert faster when they can browse your full portfolio and request quotes from one mobile page.",
       "service_key": "mobile_landing_page",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-07 22:24 UTC",
+      "message_id": "<179141184907.2445.15195903177094244375@gmail.com>",
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Minneapolis, MN\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound casual personal, NOT marketing\n     - Spark genuine curiosity, not clickbait\n     - Must feel specific to this business\n     - No emojis, no ALL CAPS, no exclamation marks, no question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Constraints:**\n   - 3-7 words\n   - Lowercase except proper nouns (so \"Minneapolis\" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but \"Minneapolis\" is a proper noun)\n   - No \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - No emojis, ALL CAPS, !, ?\n   - Must feel specific to a Minneapolis florist\n   - Must sound casual personal, not marketing\n   - Spark genuine curiosity\n\n3.  **Brainstorming Angles:**\n   - The service is a fast 1-page mobile layout showing packages, reviews,"
     },
     {
       "business": "Gardenias Florist",
@@ -804,6 +820,6 @@
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-06 22:36 UTC"
+    "last_run": "2026-10-07 22:51 UTC"
   }
 }
