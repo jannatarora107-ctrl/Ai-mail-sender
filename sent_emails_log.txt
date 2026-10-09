@@ -371,3 +371,65 @@ Output: shop visual stop browse
    - 3-7 words
    - Lowercase except proper nouns (so "Phoenix" and "AZ" can be capitalized, but the rest should be lowercase; however, proper nouns like the business name might count, but the constraint says "all lowercase except proper nouns". I need to be careful. The business name "CakesbyStiggy" has capital letters, but the constraint might want me to follow the "lowercase except proper nouns" rule for the subject line itself. Actually, re-reading: "All lowercase except proper nouns". This likely means the subject line text should be all lowercase, except if there are proper nouns (like names, places
 [2026-10-08 22:40:48] SENT -> lifessweetinc@gmail.com | Subject: Re: life's sweet on one page
+[2026-10-09 21:42:44] SENT -> amourdesucre.az@gmail.com | Subject: your cakes deserve better phone photos
+[2026-10-09 21:53:03] SENT -> lamianailbaroftampa@gmail.com | Subject: your nail art caught my eye
+[2026-10-09 22:00:50] SENT -> piepiemydarling@gmail.com | Subject: Re: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Business:** Pie Pie My Darling (Vegan Cakes & Pasttry, Chicago, IL)
+   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.
+   - **City Context:** Chicago, IL
+   - **Constraints:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Sound like a casual personal note, NOT marketing
+     - Spark genuine curiosity without being clickbait
+     - Must feel specific to THIS business
+     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Business & Service:**
+   - Business: Pie Pie My Darling, vegan cakes & pastries, Chicago, IL
+   - Service: 1-page mobile layout, shows packages, reviews, direct booking button, 48-hour turnaround
+   - Key unique points: vegan, Chicago-based, fast 48-hour layout, mobile-friendly, includes reviews & booking
+
+3.  **Brainstorming Subject Lines (focusing on 3-7 words, lowercase except proper nouns, casual personal vibe, specific, no banned words):**
+   - Need to mention the business name or city context naturally
+   - Proper nouns can be capitalized, but the rule says "All lowercase except proper
+[2026-10-09 22:03:21] SENT -> completebeautybar@gmail.com | Subject: Re: walked by complete beauty bar last week
+[2026-10-09 22:06:07] SENT -> trademarksalon@gmail.com | Subject: Re: pulled up trademark salon on my phone
+[2026-10-09 22:08:54] SENT -> prestigious24@gmail.com | Subject: Re: your weekly specials blend in on mobile
+[2026-10-09 22:11:00] SENT -> mankind.barbershop22@gmail.com | Subject: Re: mankind barbers on mobile in 48 hours
+[2026-10-09 22:13:21] SENT -> capuccinailspa@gmail.com | Subject: Re: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Target:** Small business owner (Capucci Nails & Spa in Tampa, FL)
+   - **Subject line constraints:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Casual personal note, NOT marketing
+     - Spark genuine curiosity without being clickbait
+     - Must feel specific to THIS business (Capucci Nails & Spa, Tampa, FL)
+     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Business/Context:**
+   - Business: Capucci Nails & Spa
+   - Location: Tampa, FL
+   - Service offered in the prompt: a fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours
+   - The email is presumably from a web designer/developer offering this service
+   - But the subject line must NOT sound like marketing, must be casual personal, spark curiosity, be specific, and avoid banned phrases/patterns
+
+3.  **Identify Key Specifics for "Specific to THIS business":**
+   - Name: Capucci Nails & Spa
+   - Location: Tampa, FL
+   - Industry: Nail & Spa
+   - Potential pain points/needs: online presence, booking system, mobile-friendly layout, showing packages/reviews
+
+4.  **Brain
+[2026-10-09 22:15:09] SENT -> lerevenailstampa@gmail.com | Subject: Re: an idea for le reve's menu
+[2026-10-09 22:18:31] SENT -> solenails813@gmail.com | Subject: Re: Sole Nails Lounge in one tap
+[2026-10-09 22:20:24] SENT -> envynailsdowntown@gmail.com | Subject: Re: re envy nails & spa's feed
+[2026-10-09 22:22:43] SENT -> edanailsstudio@gmail.com | Subject: Re: thought about eda nail studio

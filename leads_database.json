@@ -469,8 +469,11 @@
       "niche": "Custom Cakes & Pastries (Phoenix, AZ)",
       "pain_point": "handcrafted custom cake drops need bold visual brand cards to stand out in a crowded Phoenix dessert market.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-09 21:42 UTC",
+      "message_id": "<179158216344.2120.10819420779711930869@gmail.com>",
+      "subject_used": "your cakes deserve better phone photos"
     },
     {
       "business": "Life's Sweet Inc.",
@@ -528,10 +531,11 @@
       "niche": "Vegan Cakes & Pastries (Chicago, IL)",
       "pain_point": "vegan bakeries reach more health-conscious customers with a dedicated 1-page mobile page showing menu options and order process.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 20:56 UTC",
       "message_id": "<179114739500.2261.7846291165491018107@gmail.com>",
-      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** Pie Pie My Darling (Vegan Cakes & Pasttry, Chicago, IL)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City Context:** Chicago, IL\n   - **Constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business & Service:**\n   - Business: Pie Pie My Darling, vegan cakes & pastries, Chicago, IL\n   - Service: 1-page mobile layout, shows packages, reviews, direct booking button, 48-hour turnaround\n   - Key unique points: vegan, Chicago-based, fast 48-hour layout, mobile-friendly, includes reviews & booking\n\n3.  **Brainstorming Subject Lines (focusing on 3-7 words, lowercase except proper nouns, casual personal vibe, specific, no banned words):**\n   - Need to mention the business name or city context naturally\n   - Proper nouns can be capitalized, but the rule says \"All lowercase except proper"
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** Pie Pie My Darling (Vegan Cakes & Pasttry, Chicago, IL)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City Context:** Chicago, IL\n   - **Constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business & Service:**\n   - Business: Pie Pie My Darling, vegan cakes & pastries, Chicago, IL\n   - Service: 1-page mobile layout, shows packages, reviews, direct booking button, 48-hour turnaround\n   - Key unique points: vegan, Chicago-based, fast 48-hour layout, mobile-friendly, includes reviews & booking\n\n3.  **Brainstorming Subject Lines (focusing on 3-7 words, lowercase except proper nouns, casual personal vibe, specific, no banned words):**\n   - Need to mention the business name or city context naturally\n   - Proper nouns can be capitalized, but the rule says \"All lowercase except proper",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Complete Beauty Bar",
@@ -540,10 +544,11 @@
       "niche": "Beauty Bar & Salon (Houston, TX)",
       "pain_point": "weekly nail and beauty specials get lost in plain text captions without eye-catching visual brand cards to stop the scroll.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:00 UTC",
       "message_id": "<179114765868.2261.15623403424395770229@gmail.com>",
-      "subject_used": "walked by complete beauty bar last week"
+      "subject_used": "walked by complete beauty bar last week",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "ICU Lookin Barber Studio",
@@ -565,10 +570,11 @@
       "niche": "Hair Salon (Houston, TX)",
       "pain_point": "new clients searching for a salon can't find your service menu and pricing fast enough on mobile before booking elsewhere.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:04 UTC",
       "message_id": "<179114788412.2261.12234283804592186750@gmail.com>",
-      "subject_used": "pulled up trademark salon on my phone"
+      "subject_used": "pulled up trademark salon on my phone",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Prestigious Cuts",
@@ -577,10 +583,11 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "fresh cut photos and weekly promos deserve bold announcement cards that make followers stop scrolling and book instantly.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:08 UTC",
       "message_id": "<179114812456.2261.1478976539612380083@gmail.com>",
-      "subject_used": "your weekly specials blend in on mobile"
+      "subject_used": "your weekly specials blend in on mobile",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Sarath's Barbershop",
@@ -599,10 +606,11 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "a clean 1-page mobile showcase showing your barbershop vibe, services, and booking link converts Instagram visitors to booked clients.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:12 UTC",
       "message_id": "<179114835894.2261.9110607498930166634@gmail.com>",
-      "subject_used": "mankind barbers on mobile in 48 hours"
+      "subject_used": "mankind barbers on mobile in 48 hours",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Caballeros Barbershop",
@@ -634,10 +642,11 @@
       "niche": "Nail & Spa (Tampa, FL)",
       "pain_point": "new clients need a clear mobile page showing your full service menu, pricing, and booking link before choosing a salon.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:19 UTC",
       "message_id": "<179114875753.2261.1300761485165952175@gmail.com>",
-      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Target:** Small business owner (Capucci Nails & Spa in Tampa, FL)\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business (Capucci Nails & Spa, Tampa, FL)\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business/Context:**\n   - Business: Capucci Nails & Spa\n   - Location: Tampa, FL\n   - Service offered in the prompt: a fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours\n   - The email is presumably from a web designer/developer offering this service\n   - But the subject line must NOT sound like marketing, must be casual personal, spark curiosity, be specific, and avoid banned phrases/patterns\n\n3.  **Identify Key Specifics for \"Specific to THIS business\":**\n   - Name: Capucci Nails & Spa\n   - Location: Tampa, FL\n   - Industry: Nail & Spa\n   - Potential pain points/needs: online presence, booking system, mobile-friendly layout, showing packages/reviews\n\n4.  **Brain"
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Target:** Small business owner (Capucci Nails & Spa in Tampa, FL)\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business (Capucci Nails & Spa, Tampa, FL)\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business/Context:**\n   - Business: Capucci Nails & Spa\n   - Location: Tampa, FL\n   - Service offered in the prompt: a fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours\n   - The email is presumably from a web designer/developer offering this service\n   - But the subject line must NOT sound like marketing, must be casual personal, spark curiosity, be specific, and avoid banned phrases/patterns\n\n3.  **Identify Key Specifics for \"Specific to THIS business\":**\n   - Name: Capucci Nails & Spa\n   - Location: Tampa, FL\n   - Industry: Nail & Spa\n   - Potential pain points/needs: online presence, booking system, mobile-friendly layout, showing packages/reviews\n\n4.  **Brain",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Lamia Nail Bar of Tampa",
@@ -646,8 +655,11 @@
       "niche": "Nail Bar (Tampa, FL)",
       "pain_point": "nail bar specials and seasonal collections drive more bookings with bold, scrollstopping announcement cards.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-09 21:53 UTC",
+      "message_id": "<179158278201.2120.18134797188421910217@gmail.com>",
+      "subject_used": "your nail art caught my eye"
     },
     {
       "business": "Trendy Nail Bar",
@@ -669,10 +681,11 @@
       "niche": "Nail & Spa (Tampa, FL)",
       "pain_point": "clients choosing between nail salons decide faster when they can scan a QR menu showing services and pricing before walking in.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:26 UTC",
       "message_id": "<179114917295.2261.11116102663753168441@gmail.com>",
-      "subject_used": "an idea for le reve's menu"
+      "subject_used": "an idea for le reve's menu",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Sole Nails Lounge",
@@ -681,10 +694,11 @@
       "niche": "Nail Lounge (Tampa, FL)",
       "pain_point": "a 1-page mobile showcase of your nail lounge ambiance, services, and booking link converts Instagram visitors into booked appointments.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:30 UTC",
       "message_id": "<179114944360.2261.9952255834769004340@gmail.com>",
-      "subject_used": "Sole Nails Lounge in one tap"
+      "subject_used": "Sole Nails Lounge in one tap",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Envy Nails & Spa",
@@ -693,10 +707,11 @@
       "niche": "Nail & Spa (Orlando, FL)",
       "pain_point": "downtown nail salons lose potential clients who browse Instagram but find no quick link to see services or book online.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:34 UTC",
       "message_id": "<179114969449.2261.18117516545477870540@gmail.com>",
-      "subject_used": "re envy nails & spa's feed"
+      "subject_used": "re envy nails & spa's feed",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Eda Nail Studio",
@@ -705,10 +720,11 @@
       "niche": "Nail Studio (Orlando, FL)",
       "pain_point": "nail studio seasonal designs and promotions need bold visual cards to stand out in Orlando's competitive beauty market.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-04 21:38 UTC",
       "message_id": "<179114987920.2261.17082284248531629465@gmail.com>",
-      "subject_used": "thought about eda nail studio"
+      "subject_used": "thought about eda nail studio",
+      "followup_1_at": "2026-10-09 21:59 UTC"
     },
     {
       "business": "Venus Nail Lounge and Spa",
@@ -833,6 +849,6 @@
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-08 22:42 UTC"
+    "last_run": "2026-10-09 22:23 UTC"
   }
 }
