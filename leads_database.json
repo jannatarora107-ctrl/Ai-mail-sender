@@ -359,8 +359,11 @@
       "niche": "Multi-location Bakery (Seattle, WA)",
       "pain_point": "special order cut-off dates and seasonal menus get buried when customers cannot scan a clear QR menu at the counter.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-11 21:07 UTC",
+      "message_id": "<179175282254.2341.14360502859985820128@gmail.com>",
+      "subject_used": "idea for fresh flours bakery"
     },
     {
       "business": "Bloom Coffee Co.",
@@ -369,8 +372,11 @@
       "niche": "Woman-Owned Coffee Shop (Atlanta, GA)",
       "pain_point": "customers waiting in line currently have no QR menu to browse your food and coffee options before reaching the counter.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-11 21:09 UTC",
+      "message_id": "<179175299164.2341.15701898111072341761@gmail.com>",
+      "subject_used": "idea for bloom coffee co."
     },
     {
       "business": "Flow Coffee Roasters",
@@ -513,8 +519,11 @@
       "niche": "Custom Cakes & Cookies (Chicago, IL)",
       "pain_point": "custom-designed cake and cookie collections get overlooked without bold brand creatives to announce new drops on social.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-11 21:13 UTC",
+      "message_id": "<179175322382.2341.10497477025269491749@gmail.com>",
+      "subject_used": "idea for carmiecakes"
     },
     {
       "business": "Ambrosia Euro-American Patisserie",
@@ -523,11 +532,12 @@
       "niche": "Artisan Patisserie (Barrington, IL)",
       "pain_point": "European artisan pastries and custom cakes deserve a clean mobile showcase so local clients can browse and inquire instantly.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-06 21:53 UTC",
       "message_id": "<179132362165.2233.9184072955859303323@gmail.com>",
-      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** Ambrosia Euro-American Patisserie (Artisan Patisserie in Barrington, IL)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Barrington, IL (artisan patisserie)\n   - **Constraints for subject line:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business & Service:**\n   - Business: Ambrosia Euro-American Patisserie\n   - Location: Barrington, IL\n   - Type: Artisan patisserie\n   - Need: Mobile layout showing packages, reviews, booking button, 48-hour turnaround\n   - Target: Small business owner\n\n3.  **Brainstorming Angles (casual, personal, specific, no marketing speak):**\n   - Need to avoid: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\", \"?\", \"!\", emojis, all caps\n   - Must be 3-"
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** Ambrosia Euro-American Patisserie (Artisan Patisserie in Barrington, IL)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Barrington, IL (artisan patisserie)\n   - **Constraints for subject line:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound like a casual personal note, NOT marketing\n     - Spark genuine curiosity without being clickbait\n     - Must feel specific to THIS business\n     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Business & Service:**\n   - Business: Ambrosia Euro-American Patisserie\n   - Location: Barrington, IL\n   - Type: Artisan patisserie\n   - Need: Mobile layout showing packages, reviews, booking button, 48-hour turnaround\n   - Target: Small business owner\n\n3.  **Brainstorming Angles (casual, personal, specific, no marketing speak):**\n   - Need to avoid: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\", \"?\", \"!\", emojis, all caps\n   - Must be 3-",
+      "followup_1_at": "2026-10-11 21:23 UTC"
     },
     {
       "business": "Pie Pie My Darling",
@@ -602,8 +612,11 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "loyal customers and new walk-ins both benefit from a QR menu at the chair showing all available services and add-on prices.",
       "service_key": "qr_digital_menu",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-11 21:17 UTC",
+      "message_id": "<179175342026.2341.18224035848694036157@gmail.com>",
+      "subject_used": "thought about sarath's barbershop"
     },
     {
       "business": "Mankind Barbers",
@@ -795,10 +808,11 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "walk-in customers and event planners need a scannable QR menu showing your arrangement categories and starting prices.",
       "service_key": "qr_digital_menu",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-06 00:17 UTC",
       "message_id": "<179124586458.2351.10373997895951999052@gmail.com>",
-      "subject_used": "loved browsing your arrangements on my phone"
+      "subject_used": "loved browsing your arrangements on my phone",
+      "followup_1_at": "2026-10-11 21:23 UTC"
     },
     {
       "business": "MillerHouse Flowers",
@@ -807,10 +821,11 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "high-end floral designers lose bookings when potential clients can't quickly browse your style and pricing on mobile.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "sent_at": "2026-10-06 00:22 UTC",
       "message_id": "<179124613056.2351.12670395645220310712@gmail.com>",
-      "subject_used": "millerhouse flowers on one mobile page"
+      "subject_used": "millerhouse flowers on one mobile page",
+      "followup_1_at": "2026-10-11 21:23 UTC"
     },
     {
       "business": "Urban Blooms Minneapolis",
@@ -832,11 +847,12 @@
       "niche": "Boutique Florist (Minneapolis, MN)",
       "pain_point": "boutique florists build faster trust with a clean mobile page showing your story, past work, and easy inquiry button.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-06 22:05 UTC",
       "message_id": "<179132434960.2233.1385323853881681742@gmail.com>",
-      "subject_used": "thelocalpetal.com on a phone"
+      "subject_used": "thelocalpetal.com on a phone",
+      "followup_1_at": "2026-10-11 21:23 UTC"
     },
     {
       "business": "Hummingbird Floral MN",
@@ -845,11 +861,12 @@
       "niche": "Florist (Minneapolis/St. Paul, MN)",
       "pain_point": "floral studios serving two cities need a clear digital presence showing service areas, galleries, and booking info in one page.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-06 22:09 UTC",
       "message_id": "<179132454994.2233.17987709195186005747@gmail.com>",
-      "subject_used": "tried booking hummingbird on my phone"
+      "subject_used": "tried booking hummingbird on my phone",
+      "followup_1_at": "2026-10-11 21:23 UTC"
     },
     {
       "business": "Maria's Hair Designer",
@@ -858,13 +875,16 @@
       "niche": "Hair Salon (Houston, TX)",
       "pain_point": "hair salon before-and-after transformations deserve bold visual brand cards that drive new bookings from Instagram followers.",
       "service_key": "social_creatives",
-      "status": "failed",
-      "fail_reason": "SMTP error"
+      "status": "sent",
+      "fail_reason": "SMTP error",
+      "sent_at": "2026-10-11 21:20 UTC",
+      "message_id": "<179175360700.2341.646428608397413200@gmail.com>",
+      "subject_used": "thought about maria's hair designer"
     }
   ],
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-10 21:16 UTC"
+    "last_run": "2026-10-11 21:34 UTC"
   }
 }

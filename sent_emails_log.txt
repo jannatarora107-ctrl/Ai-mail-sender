@@ -503,3 +503,38 @@ Output: shop visual stop browse
 [2026-10-10 21:10:46] SENT -> venusnaillounge2021@gmail.com | Subject: Re: re venus nail lounge and spa's feed
 [2026-10-10 21:13:20] SENT -> anitasflowershop169@gmail.com | Subject: Re: thought about anita's flower shop
 [2026-10-10 21:15:34] SENT -> moonlightfloralshop@gmail.com | Subject: Re: re moonlight floral's feed
+[2026-10-11 21:07:03] SENT -> freshfloursseattle@gmail.com | Subject: idea for fresh flours bakery
+[2026-10-11 21:09:52] SENT -> bloomcoffeecoatl@gmail.com | Subject: idea for bloom coffee co.
+[2026-10-11 21:13:45] SENT -> 4carmiecakes@gmail.com | Subject: idea for carmiecakes
+[2026-10-11 21:17:01] SENT -> sarathsbarbershop@gmail.com | Subject: thought about sarath's barbershop
+[2026-10-11 21:20:08] SENT -> charitous2000@gmail.com | Subject: thought about maria's hair designer
+[2026-10-11 21:23:57] SENT -> ambrosiaeuro@gmail.com | Subject: Re: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Business:** Ambrosia Euro-American Patisserie (Artisan Patisserie in Barrington, IL)
+   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.
+   - **City context:** Barrington, IL (artisan patisserie)
+   - **Constraints for subject line:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Sound like a casual personal note, NOT marketing
+     - Spark genuine curiosity without being clickbait
+     - Must feel specific to THIS business
+     - NO emojis, NO ALL CAPS, NO exclamation marks, NO question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Business & Service:**
+   - Business: Ambrosia Euro-American Patisserie
+   - Location: Barrington, IL
+   - Type: Artisan patisserie
+   - Need: Mobile layout showing packages, reviews, booking button, 48-hour turnaround
+   - Target: Small business owner
+
+3.  **Brainstorming Angles (casual, personal, specific, no marketing speak):**
+   - Need to avoid: "quick question", "just reaching out", "opportunity", "offer", "free", "help", "?", "!", emojis, all caps
+   - Must be 3-
+[2026-10-11 21:26:10] SENT -> gardeniasflorist@gmail.com | Subject: Re: loved browsing your arrangements on my phone
+[2026-10-11 21:28:45] SENT -> millerhouseflowers@gmail.com | Subject: Re: millerhouse flowers on one mobile page
+[2026-10-11 21:30:21] SENT -> thelocalpetal@gmail.com | Subject: Re: thelocalpetal.com on a phone
+[2026-10-11 21:32:55] SENT -> hummingbirdfloralmn@gmail.com | Subject: Re: tried booking hummingbird on my phone
