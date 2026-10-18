@@ -442,12 +442,13 @@
       "niche": "Cafe & Dessert Shop (Roswell, GA)",
       "pain_point": "tea and dessert specials get lost in long captions without bold announcement visuals that stop the scroll.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-07 22:07 UTC",
       "message_id": "<179141086160.2445.12588062882310600786@gmail.com>",
       "subject_used": "your pastries deserve better photos",
-      "followup_1_at": "2026-10-14 20:49 UTC"
+      "followup_1_at": "2026-10-14 20:49 UTC",
+      "followup_2_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "Ginkgo Bakery Cafe",
@@ -855,11 +856,12 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "custom floral design clients convert faster when they can browse your full portfolio and request quotes from one mobile page.",
       "service_key": "mobile_landing_page",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-07 22:24 UTC",
       "message_id": "<179141184907.2445.15195903177094244375@gmail.com>",
-      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Minneapolis, MN\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound casual personal, NOT marketing\n     - Spark genuine curiosity, not clickbait\n     - Must feel specific to this business\n     - No emojis, no ALL CAPS, no exclamation marks, no question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Constraints:**\n   - 3-7 words\n   - Lowercase except proper nouns (so \"Minneapolis\" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but \"Minneapolis\" is a proper noun)\n   - No \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - No emojis, ALL CAPS, !, ?\n   - Must feel specific to a Minneapolis florist\n   - Must sound casual personal, not marketing\n   - Spark genuine curiosity\n\n3.  **Brainstorming Angles:**\n   - The service is a fast 1-page mobile layout showing packages, reviews,"
+      "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Minneapolis, MN\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound casual personal, NOT marketing\n     - Spark genuine curiosity, not clickbait\n     - Must feel specific to this business\n     - No emojis, no ALL CAPS, no exclamation marks, no question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Constraints:**\n   - 3-7 words\n   - Lowercase except proper nouns (so \"Minneapolis\" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but \"Minneapolis\" is a proper noun)\n   - No \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - No emojis, ALL CAPS, !, ?\n   - Must feel specific to a Minneapolis florist\n   - Must sound casual personal, not marketing\n   - Spark genuine curiosity\n\n3.  **Brainstorming Angles:**\n   - The service is a fast 1-page mobile layout showing packages, reviews,",
+      "followup_1_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "Gardenias Florist",
@@ -868,11 +870,12 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "walk-in customers and event planners need a scannable QR menu showing your arrangement categories and starting prices.",
       "service_key": "qr_digital_menu",
-      "status": "followed_up_1",
+      "status": "completed",
       "sent_at": "2026-10-06 00:17 UTC",
       "message_id": "<179124586458.2351.10373997895951999052@gmail.com>",
       "subject_used": "loved browsing your arrangements on my phone",
-      "followup_1_at": "2026-10-11 21:23 UTC"
+      "followup_1_at": "2026-10-11 21:23 UTC",
+      "followup_2_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "MillerHouse Flowers",
@@ -881,11 +884,12 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "high-end floral designers lose bookings when potential clients can't quickly browse your style and pricing on mobile.",
       "service_key": "mobile_landing_page",
-      "status": "followed_up_1",
+      "status": "completed",
       "sent_at": "2026-10-06 00:22 UTC",
       "message_id": "<179124613056.2351.12670395645220310712@gmail.com>",
       "subject_used": "millerhouse flowers on one mobile page",
-      "followup_1_at": "2026-10-11 21:23 UTC"
+      "followup_1_at": "2026-10-11 21:23 UTC",
+      "followup_2_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "Urban Blooms Minneapolis",
@@ -894,11 +898,12 @@
       "niche": "Urban Florist (Minneapolis, MN)",
       "pain_point": "urban flower shop weekly drops and event specials need scroll-stopping visual brand cards to grow your Instagram following.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-10 20:53 UTC",
       "message_id": "<179166561525.2095.11249318768290217426@gmail.com>",
-      "subject_used": "saw your peony arrangements online"
+      "subject_used": "saw your peony arrangements online",
+      "followup_1_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "The Local Petal",
@@ -907,12 +912,13 @@
       "niche": "Boutique Florist (Minneapolis, MN)",
       "pain_point": "boutique florists build faster trust with a clean mobile page showing your story, past work, and easy inquiry button.",
       "service_key": "mobile_landing_page",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-06 22:05 UTC",
       "message_id": "<179132434960.2233.1385323853881681742@gmail.com>",
       "subject_used": "thelocalpetal.com on a phone",
-      "followup_1_at": "2026-10-11 21:23 UTC"
+      "followup_1_at": "2026-10-11 21:23 UTC",
+      "followup_2_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "Hummingbird Floral MN",
@@ -921,12 +927,13 @@
       "niche": "Florist (Minneapolis/St. Paul, MN)",
       "pain_point": "floral studios serving two cities need a clear digital presence showing service areas, galleries, and booking info in one page.",
       "service_key": "mobile_landing_page",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-06 22:09 UTC",
       "message_id": "<179132454994.2233.17987709195186005747@gmail.com>",
       "subject_used": "tried booking hummingbird on my phone",
-      "followup_1_at": "2026-10-11 21:23 UTC"
+      "followup_1_at": "2026-10-11 21:23 UTC",
+      "followup_2_at": "2026-10-18 19:23 UTC"
     },
     {
       "business": "Maria's Hair Designer",
@@ -935,16 +942,17 @@
       "niche": "Hair Salon (Houston, TX)",
       "pain_point": "hair salon before-and-after transformations deserve bold visual brand cards that drive new bookings from Instagram followers.",
       "service_key": "social_creatives",
-      "status": "sent",
+      "status": "followed_up_1",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:20 UTC",
       "message_id": "<179175360700.2341.646428608397413200@gmail.com>",
-      "subject_used": "thought about maria's hair designer"
+      "subject_used": "thought about maria's hair designer",
+      "followup_1_at": "2026-10-18 19:23 UTC"
     }
   ],
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-17 19:59 UTC"
+    "last_run": "2026-10-18 19:47 UTC"
   }
 }

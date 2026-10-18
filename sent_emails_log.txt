@@ -794,3 +794,37 @@ Output: shop visual stop browse
 [2026-10-17 19:53:10] SENT -> venusnaillounge2021@gmail.com | Subject: Re: re venus nail lounge and spa's feed
 [2026-10-17 19:55:42] SENT -> anitasflowershop169@gmail.com | Subject: Re: thought about anita's flower shop
 [2026-10-17 19:58:11] SENT -> moonlightfloralshop@gmail.com | Subject: Re: re moonlight floral's feed
+[2026-10-18 19:23:54] SENT -> cafelebon43@gmail.com | Subject: Re: your pastries deserve better photos
+[2026-10-18 19:27:53] SENT -> 1341floraldesigns@gmail.com | Subject: Re: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)
+   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.
+   - **City context:** Minneapolis, MN
+   - **Subject line constraints:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Sound casual personal, NOT marketing
+     - Spark genuine curiosity, not clickbait
+     - Must feel specific to this business
+     - No emojis, no ALL CAPS, no exclamation marks, no question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Constraints:**
+   - 3-7 words
+   - Lowercase except proper nouns (so "Minneapolis" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but "Minneapolis" is a proper noun)
+   - No "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - No emojis, ALL CAPS, !, ?
+   - Must feel specific to a Minneapolis florist
+   - Must sound casual personal, not marketing
+   - Spark genuine curiosity
+
+3.  **Brainstorming Angles:**
+   - The service is a fast 1-page mobile layout showing packages, reviews,
+[2026-10-18 19:30:14] SENT -> gardeniasflorist@gmail.com | Subject: Re: loved browsing your arrangements on my phone
+[2026-10-18 19:34:50] SENT -> millerhouseflowers@gmail.com | Subject: Re: millerhouse flowers on one mobile page
+[2026-10-18 19:36:10] SENT -> urbanbloomsmpls@gmail.com | Subject: Re: saw your peony arrangements online
+[2026-10-18 19:38:54] SENT -> thelocalpetal@gmail.com | Subject: Re: thelocalpetal.com on a phone
+[2026-10-18 19:42:04] SENT -> hummingbirdfloralmn@gmail.com | Subject: Re: tried booking hummingbird on my phone
+[2026-10-18 19:46:02] SENT -> charitous2000@gmail.com | Subject: Re: thought about maria's hair designer
