@@ -828,3 +828,33 @@ Output: shop visual stop browse
 [2026-10-18 19:38:54] SENT -> thelocalpetal@gmail.com | Subject: Re: thelocalpetal.com on a phone
 [2026-10-18 19:42:04] SENT -> hummingbirdfloralmn@gmail.com | Subject: Re: tried booking hummingbird on my phone
 [2026-10-18 19:46:02] SENT -> charitous2000@gmail.com | Subject: Re: thought about maria's hair designer
+[2026-10-19 22:05:17] SENT -> amourdesucre.az@gmail.com | Subject: Re: your cakes deserve better phone photos
+[2026-10-19 22:06:46] SENT -> spalalatampa@gmail.com | Subject: Re: spa la la's specials stopped my scroll
+[2026-10-19 22:08:39] SENT -> lamianailbaroftampa@gmail.com | Subject: Re: your nail art caught my eye
+[2026-10-19 22:10:37] SENT -> 1341floraldesigns@gmail.com | Subject: Re: Here's a thinking process:
+
+1.  **Analyze the Request:**
+   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)
+   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.
+   - **City context:** Minneapolis, MN
+   - **Subject line constraints:**
+     - 3-7 words only
+     - All lowercase except proper nouns
+     - Sound casual personal, NOT marketing
+     - Spark genuine curiosity, not clickbait
+     - Must feel specific to this business
+     - No emojis, no ALL CAPS, no exclamation marks, no question marks
+     - NEVER use: "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - **Output:** ONLY the subject line text. Nothing else. No quotes.
+
+2.  **Deconstruct the Constraints:**
+   - 3-7 words
+   - Lowercase except proper nouns (so "Minneapolis" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but "Minneapolis" is a proper noun)
+   - No "quick question", "just reaching out", "opportunity", "offer", "free", "help"
+   - No emojis, ALL CAPS, !, ?
+   - Must feel specific to a Minneapolis florist
+   - Must sound casual personal, not marketing
+   - Spark genuine curiosity
+
+3.  **Brainstorming Angles:**
+   - The service is a fast 1-page mobile layout showing packages, reviews,

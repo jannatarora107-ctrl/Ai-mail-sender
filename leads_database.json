@@ -516,12 +516,13 @@
       "niche": "Custom Cakes & Pastries (Phoenix, AZ)",
       "pain_point": "handcrafted custom cake drops need bold visual brand cards to stand out in a crowded Phoenix dessert market.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-09 21:42 UTC",
       "message_id": "<179158216344.2120.10819420779711930869@gmail.com>",
       "subject_used": "your cakes deserve better phone photos",
-      "followup_1_at": "2026-10-15 20:30 UTC"
+      "followup_1_at": "2026-10-15 20:30 UTC",
+      "followup_2_at": "2026-10-19 22:05 UTC"
     },
     {
       "business": "Life's Sweet Inc.",
@@ -701,12 +702,13 @@
       "niche": "Spa & Nail Salon (Tampa, FL)",
       "pain_point": "spa service menus and seasonal nail art promos get overlooked without vibrant visual brand cards on social media.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-08 22:12 UTC",
       "message_id": "<179149752936.2250.6511734171957100102@gmail.com>",
       "subject_used": "spa la la's specials stopped my scroll",
-      "followup_1_at": "2026-10-15 20:30 UTC"
+      "followup_1_at": "2026-10-15 20:30 UTC",
+      "followup_2_at": "2026-10-19 22:05 UTC"
     },
     {
       "business": "Capucci Nails & Spa",
@@ -729,12 +731,13 @@
       "niche": "Nail Bar (Tampa, FL)",
       "pain_point": "nail bar specials and seasonal collections drive more bookings with bold, scrollstopping announcement cards.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-09 21:53 UTC",
       "message_id": "<179158278201.2120.18134797188421910217@gmail.com>",
       "subject_used": "your nail art caught my eye",
-      "followup_1_at": "2026-10-17 19:27 UTC"
+      "followup_1_at": "2026-10-17 19:27 UTC",
+      "followup_2_at": "2026-10-19 22:05 UTC"
     },
     {
       "business": "Trendy Nail Bar",
@@ -856,12 +859,13 @@
       "niche": "Florist (Minneapolis, MN)",
       "pain_point": "custom floral design clients convert faster when they can browse your full portfolio and request quotes from one mobile page.",
       "service_key": "mobile_landing_page",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-07 22:24 UTC",
       "message_id": "<179141184907.2445.15195903177094244375@gmail.com>",
       "subject_used": "Here's a thinking process:\n\n1.  **Analyze the Request:**\n   - **Business:** 1341 Floral Designs (Florist in Minneapolis, MN)\n   - **Service:** A fast 1-page mobile layout showing packages, reviews, and a direct booking button — live in 48 hours.\n   - **City context:** Minneapolis, MN\n   - **Subject line constraints:**\n     - 3-7 words only\n     - All lowercase except proper nouns\n     - Sound casual personal, NOT marketing\n     - Spark genuine curiosity, not clickbait\n     - Must feel specific to this business\n     - No emojis, no ALL CAPS, no exclamation marks, no question marks\n     - NEVER use: \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - **Output:** ONLY the subject line text. Nothing else. No quotes.\n\n2.  **Deconstruct the Constraints:**\n   - 3-7 words\n   - Lowercase except proper nouns (so \"Minneapolis\" can be capitalized, but rest lowercase, or all lowercase if no proper nouns needed, but \"Minneapolis\" is a proper noun)\n   - No \"quick question\", \"just reaching out\", \"opportunity\", \"offer\", \"free\", \"help\"\n   - No emojis, ALL CAPS, !, ?\n   - Must feel specific to a Minneapolis florist\n   - Must sound casual personal, not marketing\n   - Spark genuine curiosity\n\n3.  **Brainstorming Angles:**\n   - The service is a fast 1-page mobile layout showing packages, reviews,",
-      "followup_1_at": "2026-10-18 19:23 UTC"
+      "followup_1_at": "2026-10-18 19:23 UTC",
+      "followup_2_at": "2026-10-19 22:05 UTC"
     },
     {
       "business": "Gardenias Florist",
@@ -953,6 +957,6 @@
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-18 19:47 UTC"
+    "last_run": "2026-10-19 22:12 UTC"
   }
 }
