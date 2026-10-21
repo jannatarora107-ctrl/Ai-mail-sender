@@ -688,12 +688,13 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "barbershops with no digital menu lose walk-ins who want to know wait times and pricing before stepping in.",
       "service_key": "qr_digital_menu",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-10 20:50 UTC",
       "message_id": "<179166543835.2095.17016210938229707182@gmail.com>",
       "subject_used": "walked by Caballeros and had an idea",
-      "followup_1_at": "2026-10-15 20:30 UTC"
+      "followup_1_at": "2026-10-15 20:30 UTC",
+      "followup_2_at": "2026-10-21 20:57 UTC"
     },
     {
       "business": "Spa La La Tampa",
@@ -902,12 +903,13 @@
       "niche": "Urban Florist (Minneapolis, MN)",
       "pain_point": "urban flower shop weekly drops and event specials need scroll-stopping visual brand cards to grow your Instagram following.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-10 20:53 UTC",
       "message_id": "<179166561525.2095.11249318768290217426@gmail.com>",
       "subject_used": "saw your peony arrangements online",
-      "followup_1_at": "2026-10-18 19:23 UTC"
+      "followup_1_at": "2026-10-18 19:23 UTC",
+      "followup_2_at": "2026-10-21 20:57 UTC"
     },
     {
       "business": "The Local Petal",
@@ -957,6 +959,6 @@
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-20 20:37 UTC"
+    "last_run": "2026-10-21 21:00 UTC"
   }
 }
