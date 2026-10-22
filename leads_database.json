@@ -386,12 +386,13 @@
       "niche": "Multi-location Bakery (Seattle, WA)",
       "pain_point": "special order cut-off dates and seasonal menus get buried when customers cannot scan a clear QR menu at the counter.",
       "service_key": "qr_digital_menu",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:07 UTC",
       "message_id": "<179175282254.2341.14360502859985820128@gmail.com>",
       "subject_used": "idea for fresh flours bakery",
-      "followup_1_at": "2026-10-16 20:12 UTC"
+      "followup_1_at": "2026-10-16 20:12 UTC",
+      "followup_2_at": "2026-10-22 20:40 UTC"
     },
     {
       "business": "Bloom Coffee Co.",
@@ -400,12 +401,13 @@
       "niche": "Woman-Owned Coffee Shop (Atlanta, GA)",
       "pain_point": "customers waiting in line currently have no QR menu to browse your food and coffee options before reaching the counter.",
       "service_key": "qr_digital_menu",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:09 UTC",
       "message_id": "<179175299164.2341.15701898111072341761@gmail.com>",
       "subject_used": "idea for bloom coffee co.",
-      "followup_1_at": "2026-10-16 20:12 UTC"
+      "followup_1_at": "2026-10-16 20:12 UTC",
+      "followup_2_at": "2026-10-22 20:40 UTC"
     },
     {
       "business": "Flow Coffee Roasters",
@@ -560,12 +562,13 @@
       "niche": "Custom Cakes & Cookies (Chicago, IL)",
       "pain_point": "custom-designed cake and cookie collections get overlooked without bold brand creatives to announce new drops on social.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:13 UTC",
       "message_id": "<179175322382.2341.10497477025269491749@gmail.com>",
       "subject_used": "idea for carmiecakes",
-      "followup_1_at": "2026-10-16 20:12 UTC"
+      "followup_1_at": "2026-10-16 20:12 UTC",
+      "followup_2_at": "2026-10-22 20:40 UTC"
     },
     {
       "business": "Ambrosia Euro-American Patisserie",
@@ -660,12 +663,13 @@
       "niche": "Barbershop (Houston, TX)",
       "pain_point": "loyal customers and new walk-ins both benefit from a QR menu at the chair showing all available services and add-on prices.",
       "service_key": "qr_digital_menu",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:17 UTC",
       "message_id": "<179175342026.2341.18224035848694036157@gmail.com>",
       "subject_used": "thought about sarath's barbershop",
-      "followup_1_at": "2026-10-16 20:12 UTC"
+      "followup_1_at": "2026-10-16 20:12 UTC",
+      "followup_2_at": "2026-10-22 20:40 UTC"
     },
     {
       "business": "Mankind Barbers",
@@ -948,17 +952,18 @@
       "niche": "Hair Salon (Houston, TX)",
       "pain_point": "hair salon before-and-after transformations deserve bold visual brand cards that drive new bookings from Instagram followers.",
       "service_key": "social_creatives",
-      "status": "followed_up_1",
+      "status": "completed",
       "fail_reason": "SMTP error",
       "sent_at": "2026-10-11 21:20 UTC",
       "message_id": "<179175360700.2341.646428608397413200@gmail.com>",
       "subject_used": "thought about maria's hair designer",
-      "followup_1_at": "2026-10-18 19:23 UTC"
+      "followup_1_at": "2026-10-18 19:23 UTC",
+      "followup_2_at": "2026-10-22 20:40 UTC"
     }
   ],
   "stats": {
     "tier_2_active_batch": 5,
     "last_updated": "2026-09-30",
-    "last_run": "2026-10-21 21:00 UTC"
+    "last_run": "2026-10-22 20:47 UTC"
   }
 }
